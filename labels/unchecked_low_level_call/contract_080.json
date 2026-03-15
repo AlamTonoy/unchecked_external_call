@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x6af24cbee9515376491652a18faabe8a171c4fa4",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "DAO",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-03-27",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-01-12",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x61a944181a2261e497a94fd22b9d180127bdf979f5ab642010fd3aa6ac347702"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        22,
+        34
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

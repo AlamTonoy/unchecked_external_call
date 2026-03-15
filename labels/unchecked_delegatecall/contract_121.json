@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xc650b7e930773d7ce82b6e794108885859d6c93a",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.21",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "NFT",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2023-02-25",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-07",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0xda92174d6b1da763dc62eae7f92dd1fde7865e3c77e06d92923b8f3ea35aab15"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.89,
+      "line_numbers": [
+        23,
+        25
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

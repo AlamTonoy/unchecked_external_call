@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xf1d86ff3d30b592d8c53f8512a9dc2f9d4ff4efe",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Lottery",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2020-09-15",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.8,
+      "line_numbers": [
+        25,
+        26,
+        29
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xe85bba6dc63542bf0953077b2ab265880b94f2ef",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Options",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2020-09-27",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        18,
+        20,
+        27,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x939d00abfdb9847799ad7b8651e677f5b043533e",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.21",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2023-12-09",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-12-07",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0xbccd94ba23916f4300e52de0169134550e42b8abe77d119cfd01ade2478b1a52"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        10,
+        24,
+        37
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

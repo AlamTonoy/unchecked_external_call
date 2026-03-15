@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x2ca875fc6b32a3dbf9e1464301a3953f32a5d028",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.19",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2023-09-29",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "line_numbers": [
+        12,
+        20,
+        21,
+        24
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

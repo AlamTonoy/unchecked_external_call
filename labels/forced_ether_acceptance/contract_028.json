@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xf85839a7ba01ad33f69352d4357c2e5421a6629c",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Insurance",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2024-12-05",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-06-11",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0xc5cea06900ca68643ef935a71b1dea630a1cada320e7643f86f30b42689bb44f"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.83,
+      "line_numbers": [
+        16,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

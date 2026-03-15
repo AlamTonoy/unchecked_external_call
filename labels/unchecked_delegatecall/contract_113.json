@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x7011708164a8a3a015f8ce414dba6224ca6278df",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2024-02-20",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.79,
+      "line_numbers": [
+        20,
+        25,
+        26
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

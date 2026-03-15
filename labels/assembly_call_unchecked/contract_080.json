@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xa02cc15a814a4e4ce688280144ad70aaaf385f46",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Lending",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2023-06-14",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        16,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

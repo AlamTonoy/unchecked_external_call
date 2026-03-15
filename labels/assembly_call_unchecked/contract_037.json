@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xb0ef6d75c6d9a4c6d488eedc2fc6c2038d00f171",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.19",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Options",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-12-21",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        13,
+        15,
+        19
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

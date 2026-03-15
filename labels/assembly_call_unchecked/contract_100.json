@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x209408e2f7b746bbf35d1271eb051ecb7e211cc9",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-10-16",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        14,
+        18
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

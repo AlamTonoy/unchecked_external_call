@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x37320bccf49dfe0e643214c94c65429d2d4c3d97",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Yield",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2022-10-21",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-08-05",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0xd1a26eb916f0a8331162c91c39b0c33f3e67cf4c4d8b101690fe16f9ba10daee"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.76,
+      "line_numbers": [
+        12,
+        14,
+        18,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

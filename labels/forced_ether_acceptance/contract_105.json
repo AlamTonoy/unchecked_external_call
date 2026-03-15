@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xb0b98d1d2d1c077d823ea4f615b9a73d0810d14a",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lottery",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2023-10-16",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.82,
+      "line_numbers": [
+        12,
+        17,
+        20
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

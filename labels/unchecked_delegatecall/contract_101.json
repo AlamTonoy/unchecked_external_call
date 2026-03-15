@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xb2b868e244fc4ceab978ede5b58fbd0279b9eddd",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2023-02-08",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-01-01",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x8e4514e6c2ff12308568c99fd1f50db9efba217058663d5aab80bf0d526b19c1"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.81,
+      "line_numbers": [
+        12,
+        19,
+        29,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

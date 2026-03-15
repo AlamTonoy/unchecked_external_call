@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x9d26efbbce48ce86360084483d81997991409b8d",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-08-05",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.82,
+      "line_numbers": [
+        22,
+        29
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

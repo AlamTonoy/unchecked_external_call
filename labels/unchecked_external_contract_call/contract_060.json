@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xf6ee651b19743955cc6e9793be0f582d630c57a2",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.17",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-07-25",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        14,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

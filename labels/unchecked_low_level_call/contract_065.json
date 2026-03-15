@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x73e4caeebef998dd0ef08f14069ab663228d564d",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "NFT",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-09-15",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-11-27",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x2cdebe976d63607bb4e900759f1b8dc48893aaaa899e807e955f42b94c4a99a4"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.93,
+      "line_numbers": [
+        22,
+        28,
+        29
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

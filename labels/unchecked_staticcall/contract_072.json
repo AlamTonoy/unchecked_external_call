@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x2b95f13f4a9d7374b38862caaddb2c3201e8813d",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-03-08",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.85,
+      "line_numbers": [
+        22,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

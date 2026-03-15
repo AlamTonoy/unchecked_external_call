@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xaf1d2810b1210e84fa6052f397bb7f8b3c6d4894",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.4",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Options",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-11-19",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.93,
+      "line_numbers": [
+        30,
+        33
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

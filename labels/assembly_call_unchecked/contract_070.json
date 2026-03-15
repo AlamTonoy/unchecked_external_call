@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xd481346407ef8a29fca8f78bd0ca2e91e0d2c402",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "AMM",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2023-09-30",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.95,
+      "line_numbers": [
+        10,
+        21,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x4ddf4d6d5bd9730463854c1a2efca88320590993",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2023-12-17",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        20,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x9d04d613f8ab5c05b9c795aad0a6f903a7d3bec6",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "NFT",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-04-22",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-08-11",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x839aa5c7c5a2b0b7ac094ad4884dfa3627d1a047bb22e095a9a5e748c8206f76"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        10,
+        12
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

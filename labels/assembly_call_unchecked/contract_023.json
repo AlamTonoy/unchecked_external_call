@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x2bea1c5ec331e7982fee17e90cee7a933c9cbbee",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2023-11-07",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        18,
+        20,
+        27,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xd8227f066b26ed839f766d8fc00ab0c9f7c7c88b",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.23",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-12-19",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-11-06",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xfe389ab7476a95dca4552754c8879790e04cc0629f02bae5f5739b0fcdc06565"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        14,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x948b07ea34812f954f0f0eee11c24e63093999a2",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.6.12",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Lottery",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-07-16",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        21,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

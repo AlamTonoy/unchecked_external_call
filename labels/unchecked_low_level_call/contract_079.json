@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xff9b049465f8948ee2582102ddbe4e9c45e5fc2d",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.6.12",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2020-04-30",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-06-17",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x7271e77f871b2534dbd9a3f0c2e37154f15e1507b7a4a5097ffec2dc4cb89143"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        21,
+        29,
+        39
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

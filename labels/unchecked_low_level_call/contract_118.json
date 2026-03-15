@@ -1,0 +1,40 @@
+{
+  "contract_id": "0x967fc4f7a72f9a44c0049046a0454dac214f3913",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Lottery",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-07-19",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-01-19",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x926ec2c46344e72cd18b8a557f7e0c12ec959ee0d2a7c8d14f19d9bd198bb88f"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.78,
+      "line_numbers": [
+        20,
+        26,
+        32,
+        36
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

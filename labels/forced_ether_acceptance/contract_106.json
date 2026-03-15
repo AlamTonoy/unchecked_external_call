@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x07a46f177a394442c5d982c09a5e1097d5e6d045",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Payment",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-02-16",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-04-03",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x31f13600313ca2cf0c5e86cfc1f28cc4760593a1897be58352491e8389289858"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.93,
+      "line_numbers": [
+        13,
+        16,
+        17
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

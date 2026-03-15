@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xf5c68074bb71770f506721eac007576678b4cb7d",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Options",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-07-17",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.92,
+      "line_numbers": [
+        22,
+        27
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

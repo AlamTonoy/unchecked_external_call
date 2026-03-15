@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x1118bfc9b0a87459e6b8fbd9ea882c55cea630fd",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "DAO",
+  "protocol_name": "QuickSwapClone",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2022-08-18",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        12,
+        15,
+        16,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "contract_id": "0x8cb5ce8ed611028c3a5fb647c3283cdf3d3bcb82",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Options",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-02-11",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 1.0,
+      "line_numbers": [
+        13,
+        18,
+        23,
+        25
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

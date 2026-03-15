@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xbd0b45eec669c747079b24e4987e96064b580e5e",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "SushiSwapClone",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-02-02",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        13,
+        17,
+        20,
+        22
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

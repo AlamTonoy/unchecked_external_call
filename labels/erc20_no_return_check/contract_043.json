@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xedaa0c8bd802bad982f9221ac42aa7102d99f050",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.0",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Insurance",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2023-04-11",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        18,
+        20,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

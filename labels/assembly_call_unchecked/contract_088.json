@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x6749e3442223dde0a32044a0544d22fe92122c37",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.7",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "NFT",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-07-26",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.98,
+      "line_numbers": [
+        14,
+        21,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

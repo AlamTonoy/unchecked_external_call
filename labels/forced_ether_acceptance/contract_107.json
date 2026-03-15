@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x680f5ba6516efa47f64dd00ea8c2b64b2c085d57",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.21",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Payment",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-03-10",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.93,
+      "line_numbers": [
+        16,
+        21,
+        24,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xe8f700c2a7bfc3476dd07fe995a00b5de947df4c",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Lending",
+  "protocol_name": "QuickSwapClone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2024-11-25",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-09-13",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x22025c302b0c17ed7905527394f77c5e4263d3ea84b61e343021060acabc05b3"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 1.0,
+      "line_numbers": [
+        16,
+        21,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

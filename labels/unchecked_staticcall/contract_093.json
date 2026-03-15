@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x4ffea9b8acc08a00b2da96555549c0b7acf0804f",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2021-02-06",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.97,
+      "line_numbers": [
+        15,
+        22,
+        23,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

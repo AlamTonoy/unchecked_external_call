@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x2a311a066a37fe13d39f3f527ec36cb27ac66e86",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "SushiSwapClone",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2020-02-25",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-07-14",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x85dd01538bc588079ec9b1488c5cac146199470d65de685d55ca67c65959234c"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.78,
+      "line_numbers": [
+        17,
+        24,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

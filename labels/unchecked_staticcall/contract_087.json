@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x2dcec0a1f18197980d9f47c4aeadece87e3b808c",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Escrow",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-10-17",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-02-22",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x3b0f8bbe5fb5abac90213166402a2f4676482ab9d627c9dc4eb9d6d231db5f5b"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.97,
+      "line_numbers": [
+        12,
+        17,
+        22
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

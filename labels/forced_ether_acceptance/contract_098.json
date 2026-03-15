@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x658a7aeeec28979943987280707575316abc1764",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2020-09-14",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.76,
+      "line_numbers": [
+        10,
+        14,
+        25,
+        28
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

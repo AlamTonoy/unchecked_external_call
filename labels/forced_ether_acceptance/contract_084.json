@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xeeca72fc93aa2a9a3f25ca1fe4dd8a8104443e80",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-06-16",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.96,
+      "line_numbers": [
+        13,
+        23
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

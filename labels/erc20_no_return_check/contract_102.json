@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xe6aee96a58d6cb1e2f61db7048077b2f70de6c96",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Staking",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-11-29",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.89,
+      "line_numbers": [
+        17,
+        18,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

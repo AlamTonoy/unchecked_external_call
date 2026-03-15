@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xdfa42a60801283488ec9d5d54589901231e24fe1",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-05-11",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        19,
+        20,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xaa3461d55d4027cb051308a351ca5ac52ef35cd8",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.23",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Vault",
+  "protocol_name": "UniswapV2Fork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-05-24",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.85,
+      "line_numbers": [
+        11,
+        12,
+        18,
+        25
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

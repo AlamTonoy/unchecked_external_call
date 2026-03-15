@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xf5638395fb3f9f2a6986a566454964a26d9ca55c",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "AMM",
+  "protocol_name": "UniswapV2Fork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2021-01-17",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.85,
+      "line_numbers": [
+        15,
+        17
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xa73283a7eb275fd7d8a0bb397bf23eca6e910e17",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.21",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2020-02-19",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.97,
+      "line_numbers": [
+        25,
+        28,
+        29
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

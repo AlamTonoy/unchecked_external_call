@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xe76ce22782e3b571376bfa2a3e4f3c37ee67ee68",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "DAO",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-12-06",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-08-07",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0xa888075de655b8641b229482aaf1528f318764a48774fc9a1f018dff2796068c"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.92,
+      "line_numbers": [
+        16,
+        22,
+        26,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

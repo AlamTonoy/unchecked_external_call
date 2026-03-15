@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x280a7ba26ad11c96f5241899cbda488b40ef7179",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-02-22",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.89,
+      "line_numbers": [
+        30,
+        31
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

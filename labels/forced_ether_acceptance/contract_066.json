@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xf9f58b4936ae6db13b967189fe193f22911ed15f",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.21",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2022-07-03",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-09-11",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xcb260d9d4c285aeda98be41791f8647002d187e6db829d01280c80e328d75ab7"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.79,
+      "line_numbers": [
+        13,
+        14
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

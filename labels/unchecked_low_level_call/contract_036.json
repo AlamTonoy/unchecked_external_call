@@ -1,0 +1,40 @@
+{
+  "contract_id": "0xd2bf604d2fd8811c10c336af19e1f3ac1dc1f0e6",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Yield",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2021-09-15",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        11,
+        16,
+        29,
+        36
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

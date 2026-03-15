@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x1b5a70f4dc6ba7c6bbfbfe53f69f46bc6c6e2240",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.19",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Yield",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-02-18",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.95,
+      "line_numbers": [
+        19,
+        34
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

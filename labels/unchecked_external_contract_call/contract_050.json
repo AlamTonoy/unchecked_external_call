@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x418309948f344baa86789761bd0dd914710cc4fb",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lottery",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-03-05",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-09-17",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x0588fa6a4ea3bf5ef95ef4c056d9f742beec67b9ec1fd5fa35b7bcd4f16c843b"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        13,
+        22,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

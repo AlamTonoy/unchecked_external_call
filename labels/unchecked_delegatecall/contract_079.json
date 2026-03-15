@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xfc0b905fe68bc18aeff59ef5c3592510f99a66ed",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2020-05-14",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-02-13",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x8b2e33d4bfd067cd502507f5264749aa9c33510c9aed03af8640e167c90e5fe5"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.97,
+      "line_numbers": [
+        18,
+        31,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

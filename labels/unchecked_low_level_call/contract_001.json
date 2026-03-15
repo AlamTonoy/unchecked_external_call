@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xbae1603803a839c0cb52f511d9cb8f68d9d9b034",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lending",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2023-08-02",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-03-08",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0x5aba1a8374eb35c0dc61e9b37ea22b8b695f27cd22a969748fa1ecc5420bbfc8"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.78,
+      "line_numbers": [
+        14,
+        17
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

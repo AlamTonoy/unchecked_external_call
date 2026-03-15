@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xfc01292dcf3ee0176b39c8663fa1959600a9c4f4",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "AMM",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-02-19",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.87,
+      "line_numbers": [
+        14,
+        20,
+        22,
+        30
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

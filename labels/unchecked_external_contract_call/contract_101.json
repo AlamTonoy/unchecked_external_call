@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x135fbb1f36d604eefe1d3899ec70d0332cf4c96f",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "SynthetixFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2020-11-19",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-06-14",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xc2ba216b1037ab1faf0cb7d03d9d36d05969d6a3bf3b07b5dc9d1a8324dc6ec4"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        13,
+        16,
+        28,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

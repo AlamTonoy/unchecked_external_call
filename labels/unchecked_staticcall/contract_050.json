@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x1c75eb0bbaac17dded2443fc8c1e5b491f0b8078",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "NFT",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2024-09-03",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-07-09",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0xe3a91d26a0dd3413ac2722de1169b2fb26a1c6816ecb6292136427c2091ae5a0"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.99,
+      "line_numbers": [
+        10,
+        13,
+        23,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

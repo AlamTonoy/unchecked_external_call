@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xd424d012927c4b7cd512e27fc37a3b5ac1264bc8",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Vault",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-02-25",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-08-20",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xe7afa0eaf6ed541a6cbb935b28ad011734301fadfab1d2ae9feb47eae46ec521"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        12,
+        26
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x63a585f85743b5bfb3b49c9fd454b2004fac1047",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-10-02",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-12-08",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x9a2cf138699c6e49690f1ca413826b7044d134c9c3132420c9de77464879eb90"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        17,
+        19
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

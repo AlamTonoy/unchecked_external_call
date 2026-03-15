@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x0a31b16db64a6b89b7e2b827fa27ae87f767a897",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.17",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "NFT",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-09-26",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-01-11",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x90fc3c3744f7dcf55fdf8d57cf707af9d11de433645fdf3bbb2b02fb7c9499dc"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        14,
+        18,
+        21,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x6d24575e4f6d7b0f31f003d9371f7459fbc249e9",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.21",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2023-04-27",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.92,
+      "line_numbers": [
+        12,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

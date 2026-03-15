@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x43cdf16eb39e395ab90cb968583a5ac174dfa7f3",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.23",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2024-08-23",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-03-02",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0xaa083923b50e695f5cb3cfea6375a51929022474c50355bf0f067164ec9cc128"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        22,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

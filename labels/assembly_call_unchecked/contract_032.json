@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x5d6cb978d27239060f936d12d4ab3f170a737798",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Bridge",
+  "protocol_name": "UniswapV2Fork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2023-01-11",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-09-04",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xb783ba3b12645a438c0f50822cdbed220cd8fae7984123c5c84f09f32603fc9f"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.98,
+      "line_numbers": [
+        14,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

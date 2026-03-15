@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xae912dbb2e44ac07d3e980d8bde8b747a4ef63a6",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Lottery",
+  "protocol_name": "SynthetixFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2022-09-09",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-11-20",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x0f5dbfa1e9f826f860af3351a5254a473781ddfad407011235fbafcd1fc3a06b"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        24,
+        28,
+        31,
+        34
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

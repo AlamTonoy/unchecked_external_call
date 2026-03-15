@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x0ea4207e0c6ae7fa5ceb9f9b55c5478b32b6e5cf",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Vault",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2021-08-07",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-11-16",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0xc6d256de2f3074372dd43976d7a51fb928737fa54999855b297053fbeeae745c"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.92,
+      "line_numbers": [
+        19,
+        28,
+        35
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

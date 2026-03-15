@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x607112b16d9cf5c93b3a58bbfd670742180464bc",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-03-12",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.83,
+      "line_numbers": [
+        10,
+        17,
+        18,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

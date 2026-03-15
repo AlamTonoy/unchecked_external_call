@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xe71d7b84df386e8ed4c6e8d449f728588753b93c",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "AMM",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2020-01-29",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.78,
+      "line_numbers": [
+        17,
+        36
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

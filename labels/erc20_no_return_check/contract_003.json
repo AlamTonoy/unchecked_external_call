@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x41dea49ebc8f00ae0b5c2b1e3b2f0106465d8488",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Yield",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-04-22",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-01-15",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0xb71d1e941d06bfca950dfbb3278686ff9403ff5afee41c076df35d4563fc6bf8"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.95,
+      "line_numbers": [
+        23,
+        29,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

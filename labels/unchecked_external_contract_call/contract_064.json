@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x74b610960790dc7069a9769f5a6b1c9cace663fc",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.20",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Lottery",
+  "protocol_name": "MakerDAOClone",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2020-09-11",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.87,
+      "line_numbers": [
+        13,
+        18,
+        22,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

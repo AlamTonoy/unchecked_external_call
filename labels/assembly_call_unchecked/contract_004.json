@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xa26d2d22e9f7a729b0b5d1c99d40c957d956e5ff",
+  "collection_source": "github_repository",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-11-16",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-09-29",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x4223432ce3000b250023058a00720b5638662dc4843d0356f60bf7cea57376f4"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.89,
+      "line_numbers": [
+        17,
+        18
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

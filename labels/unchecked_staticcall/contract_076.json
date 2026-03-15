@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x7e3363d407bf2c33e40d4e79a6f4a3f0f0f16c6f",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "NFT",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2022-01-10",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.88,
+      "line_numbers": [
+        16,
+        19
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

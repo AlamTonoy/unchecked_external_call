@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x0044286f8b0b1a6351723b56d278bded5725110f",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Vault",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-06-22",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        13,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

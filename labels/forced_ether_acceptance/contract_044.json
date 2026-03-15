@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x3b588d19f807dd61e9083b507f144c46962c959b",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Lending",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-05-12",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.83,
+      "line_numbers": [
+        10,
+        25
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

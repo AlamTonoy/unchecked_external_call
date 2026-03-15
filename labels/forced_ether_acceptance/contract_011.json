@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x832b636615a888dfd4b6154cabefefa21d22cc9c",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "DAO",
+  "protocol_name": "SolarbeamFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-12-10",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-12-06",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x2e87cbf3b76bba418d502c9407441ffe8e452ed5f9428fe4ecb2e86133a06ca3"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.77,
+      "line_numbers": [
+        12,
+        22,
+        26,
+        29
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

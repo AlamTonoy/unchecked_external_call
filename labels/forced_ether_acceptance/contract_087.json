@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xf3a0898328ae7e0e09b7f880aaa5d39e497304c8",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Vault",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2021-03-02",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-11-20",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x8c279975dfe82e1b741f1ec6233da17907eaadb94bff37529a392057d0892a6c"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.75,
+      "line_numbers": [
+        21,
+        23,
+        24,
+        26
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

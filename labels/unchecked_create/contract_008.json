@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x00b1a791f5fcf0fbbff33d7a0dd1e422df92dfa4",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "AMM",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-04-06",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.76,
+      "line_numbers": [
+        19,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

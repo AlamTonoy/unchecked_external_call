@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x717c39a018200f527c6d7b26472ee0652a0b3cf9",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2020-08-21",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.89,
+      "line_numbers": [
+        11,
+        13,
+        17
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

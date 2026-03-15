@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xbdf774ac4aeed15c36a7fc1b641d2b2296347da7",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2022-07-13",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        11,
+        15,
+        20,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

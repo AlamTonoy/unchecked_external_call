@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x3d9541001ce6c28ccd1785cd2cee513598546f0a",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2024-04-12",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.86,
+      "line_numbers": [
+        19,
+        21,
+        24,
+        34
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

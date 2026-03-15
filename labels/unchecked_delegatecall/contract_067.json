@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x9bbb95ab524909a97ec873177169b1ef27f793dc",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Vault",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2020-03-17",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-04-23",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0x1d4edf2307ed16daaaa4de8f15b988f9ee170d894a0d1864821fe8b3ff5e8008"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.85,
+      "line_numbers": [
+        14,
+        19,
+        29,
+        34
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

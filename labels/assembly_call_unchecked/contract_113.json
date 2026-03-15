@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x5c86478f55189a3d4353eb24d1b0b5bbb42f3434",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Vault",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2023-11-22",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.85,
+      "line_numbers": [
+        14,
+        16,
+        25,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

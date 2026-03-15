@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x492d3f8b3573ca25b4a91d455b38680075127187",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Lending",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2024-04-10",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-09-12",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x52a51a8344d7c8f3efb028bbab28461dbd71938c2728666dfc447437320d4b0f"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        13,
+        17
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

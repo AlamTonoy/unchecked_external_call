@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x770792a17679c01eb4510551ea452f380fd17ea6",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.7",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2020-09-03",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-03-30",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0xd0d616a6ff5736f4b14a80015aa45454da5c8d60d26bd8838e688dbfa090ecb6"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        15,
+        24,
+        30,
+        31
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

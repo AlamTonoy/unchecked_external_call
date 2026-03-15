@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x0ced48eeb4bfa87e33b3a63a26ab8aa440ec2bd6",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Lending",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-02-04",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.99,
+      "line_numbers": [
+        14,
+        16,
+        17,
+        28
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

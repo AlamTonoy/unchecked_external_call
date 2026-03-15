@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x57ba1be01b838dafa39d3377272a18b3679b0b9a",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "DAO",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-03-04",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.87,
+      "line_numbers": [
+        14,
+        17,
+        22,
+        28
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

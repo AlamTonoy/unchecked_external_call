@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xea89cf2e28814523ea34f3f0421cf858afacf50a",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2020-10-12",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.76,
+      "line_numbers": [
+        14,
+        16,
+        28,
+        34
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

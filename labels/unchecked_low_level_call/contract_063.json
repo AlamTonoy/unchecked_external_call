@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x84fc924e800e0616beab7553cc1ec91cb14ac7f2",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2023-02-20",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.87,
+      "line_numbers": [
+        21,
+        27
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x5a8c263f84fceb858b9fa8ec9487e84c043ebe53",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2022-02-02",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-01-18",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x00e9f22cdfd00aaf7132a08c7f473907e1e5989ef041fda724a5f79a12e31c78"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        18,
+        22,
+        26,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

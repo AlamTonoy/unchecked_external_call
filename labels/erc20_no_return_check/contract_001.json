@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x1a889b9a79893d197915181b7b108ba5264c5a92",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-05-17",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        15,
+        19,
+        30,
+        31
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

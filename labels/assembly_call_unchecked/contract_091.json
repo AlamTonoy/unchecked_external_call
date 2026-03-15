@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x0869c78f0ba6c980b67829b9f4c7e787281552a9",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "DAO",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-11-27",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        19,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

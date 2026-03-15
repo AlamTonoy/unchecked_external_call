@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xd6242173e46b4bb8d4571f4c3bb4fb5b10df28a2",
+  "collection_source": "github_repository",
+  "compiler_version": "0.6.12",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-02-08",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-04-01",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x4a0a59f0185212c20bf29c9ee421decc08ffd2e00b5ef1a8ae3b7f448972ba91"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.85,
+      "line_numbers": [
+        10,
+        14,
+        18,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

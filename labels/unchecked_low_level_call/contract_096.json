@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x1b6bf1ee26b88e9bced19cd43bb0271c66462227",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.19",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Payment",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2020-10-28",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-03-05",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x4e6a9d2464597a10c09f1809fce7565efdfa605517bbe29d4bd59a763ffd050c"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        13,
+        34
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

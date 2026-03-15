@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x033e4e23a00bb8b3fc414996199deee24f815984",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "SushiSwapClone",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2021-10-13",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 1.0,
+      "line_numbers": [
+        14,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

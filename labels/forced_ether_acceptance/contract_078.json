@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x95cb631c0c34a92cf9eec0b7d5e5c52b946edb14",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Staking",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2022-05-22",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-25",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0xbe059f5032ddc2bb01d0703d26e696ae70f18f9f0ae9624f51d7f4fc1c103a57"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.91,
+      "line_numbers": [
+        17,
+        29
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

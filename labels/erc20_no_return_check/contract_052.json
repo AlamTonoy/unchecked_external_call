@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xbfdf6b4c8f823baac4ca445accb45b2a79946013",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2024-04-28",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-07-26",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xf2b54bfeebcd7d067aa09a839b482b5f319cc93e8ad8beb0388f5561116786f6"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        23,
+        29,
+        33
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

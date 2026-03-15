@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x59e9c43bd26a78badde8e01c9bb7d3b778a7800b",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "NFT",
+  "protocol_name": "SynthetixFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-04-17",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-08-22",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0xb15902361ba07f2c512ad0ae69cfd04a9b2af7e36c6e3d9f066f6c50aa5ea036"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        14,
+        21,
+        26,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

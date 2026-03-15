@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x13bb2bf571a0cc358871bc54d4815c988eee1197",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Vault",
+  "protocol_name": "SynthetixFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2022-10-01",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.86,
+      "line_numbers": [
+        16,
+        20,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x4e5518311002d2b27aa55ceff7e67433b3cdf7b2",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Lottery",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-07-28",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.96,
+      "line_numbers": [
+        10,
+        18
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

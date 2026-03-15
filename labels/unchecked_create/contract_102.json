@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x55f2300c6ea3bc2166891242d35e529565292e59",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.7",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2024-04-09",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-08-23",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0xc6378bd56488ef69e57b58df07b9ed15a52f580d66990b0cb60f68cd8046c5da"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        17,
+        22,
+        26,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

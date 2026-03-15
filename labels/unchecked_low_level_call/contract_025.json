@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x49e57a8e284c5bab054a39a66561f7e067459945",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "DAO",
+  "protocol_name": "SushiSwapClone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-01-16",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        10,
+        11,
+        38
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

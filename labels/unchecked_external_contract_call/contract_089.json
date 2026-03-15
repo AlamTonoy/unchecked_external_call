@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x576e22faaa546b3045c5526b6778c4c326f994d0",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2023-09-19",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        12,
+        16,
+        25,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

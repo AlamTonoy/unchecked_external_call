@@ -1,0 +1,40 @@
+{
+  "contract_id": "0xe6ff58049cddebac89cf42a2286682945b2250e9",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-02-23",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-12-16",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x1868133553c8fdf0a7e99fa5ef684ed5c70e38f2f801acd618bfcafb27510c89"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        11,
+        19,
+        31,
+        32
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xee259f245c7c747521c851e44f36896c7dd2ccc4",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.23",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2024-05-28",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.94,
+      "line_numbers": [
+        13,
+        17,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

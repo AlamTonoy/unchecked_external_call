@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xfc6d7200678c9333d1e2ef7bc18479021d490f55",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2024-04-16",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 1.0,
+      "line_numbers": [
+        16,
+        21,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xde0ddcb8b674ed524ef46d385193b80acca39278",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "SynthetixFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2022-10-27",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.97,
+      "line_numbers": [
+        19,
+        22,
+        31
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

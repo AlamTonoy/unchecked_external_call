@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x1721aff3faa21dad6b4dc75c23f3b2fe8ac4f5fd",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Escrow",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2024-06-01",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.96,
+      "line_numbers": [
+        13,
+        17,
+        18,
+        24
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

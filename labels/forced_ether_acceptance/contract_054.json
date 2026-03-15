@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x079fc88ceb87f81295c1f2e4a830927396486da0",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-11-19",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.8,
+      "line_numbers": [
+        17,
+        23,
+        29,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x120368641b804c60819e4c83654e069cbde0db75",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Vault",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2020-04-09",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        12,
+        17,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

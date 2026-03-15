@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xfcb3e2ec6191d1c9de5b6f9347432dc39aa3ce56",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Payment",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2022-10-19",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        17,
+        20,
+        34
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

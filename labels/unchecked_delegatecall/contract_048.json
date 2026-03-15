@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xd263af3740070e0746e2460c895a7b47623e0373",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.7.6",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-02-14",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.82,
+      "line_numbers": [
+        18,
+        20,
+        26,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

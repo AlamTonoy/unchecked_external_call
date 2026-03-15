@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x597f608b51874f36378574ba5a511a8f4c96e392",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.16",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "SynthetixFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-08-06",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.77,
+      "line_numbers": [
+        12,
+        14
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

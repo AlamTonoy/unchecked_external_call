@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x5650cb30ce6b1badddf5de3d03e48078ad23ec65",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "AMM",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2024-01-25",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-06-15",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x6d0941a9d79a194799a846129e38c847d8e2c79fb862fe2b0c0b1575f0c3cf6d"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.93,
+      "line_numbers": [
+        13,
+        14,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

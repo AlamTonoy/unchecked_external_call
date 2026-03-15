@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x66574635811096999f49624392e16b37c7a1b33b",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "AMM",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-06-20",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.8,
+      "line_numbers": [
+        13,
+        21,
+        22,
+        23
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

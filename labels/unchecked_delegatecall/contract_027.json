@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x24c2e21e68ab4d31fe10e77c9f579707a551529a",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.23",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2020-05-15",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-12-12",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x9c0e62d348e7e034760bc7182f9b06e60ab5cdc65fb874ee1a581cc1152ccd00"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.95,
+      "line_numbers": [
+        22,
+        26,
+        27,
+        34
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

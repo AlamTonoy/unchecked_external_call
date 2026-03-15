@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xbfe2398ef4de26787dc8e27aa0af460bf3b954b9",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Payment",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-02-03",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-01-17",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x4c6e8fdd73c089216065578f5a865ce5f2740678ccd401641244189e0cd36868"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        25,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

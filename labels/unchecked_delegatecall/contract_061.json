@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x8ec6fd96c84d2b8fe4ab65dcd484911bf0e0024a",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2022-11-19",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-01-23",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x3578a6ba448969b2fbe6ecb46b2dfbe4f13dbc12d29eaa90be8673858c6ba225"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.87,
+      "line_numbers": [
+        16,
+        17,
+        22
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

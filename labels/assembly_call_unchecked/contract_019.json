@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x5ab7fae8686fcbd83fa8cc46a4b4755c68f299b8",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2024-04-06",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-01-01",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0xb1d8d7f1968f8d62b7b4b45673ec7efd8483ec1fcf958a5e5607bfde114e570b"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        12,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

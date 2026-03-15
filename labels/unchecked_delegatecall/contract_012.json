@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x72164e7a82cc3858149922ccd92ffacc4e7d4255",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Yield",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-03-29",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.94,
+      "line_numbers": [
+        12,
+        22,
+        28
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

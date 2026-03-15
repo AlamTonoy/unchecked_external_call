@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xf417398e37129e1b5a82eff707479618769fee20",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Insurance",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-03-18",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-06-16",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x26721d085ad595245609cde57869b33e1e3a5395b89af7b7fbc6046dc37fcb1d"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.87,
+      "line_numbers": [
+        12,
+        17,
+        20,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

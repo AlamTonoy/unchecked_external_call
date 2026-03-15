@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x22e4783343a0ea32a51aee844ed39ccbb81bbe4e",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Auction",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-10-10",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.95,
+      "line_numbers": [
+        14,
+        19,
+        25
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

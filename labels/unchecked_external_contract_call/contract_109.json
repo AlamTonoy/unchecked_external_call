@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x85af2aea0779ca5ea76a8ea65b4bb17bc7a6032d",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "DAO",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-02-08",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-12-04",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xf3c0999ea833b02959afccab206eb8ac67f77dd983859e08227215c3a49f399e"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        15,
+        18,
+        28,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

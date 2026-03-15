@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x5369b58181402376eec83c2735b635c0055dcf1a",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.7.6",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-10-22",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-09-16",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x725e146a028377d86c60e48641b601f7fa38de64ff0a82f0266e81aa7899ce99"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.76,
+      "line_numbers": [
+        16,
+        22,
+        32
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

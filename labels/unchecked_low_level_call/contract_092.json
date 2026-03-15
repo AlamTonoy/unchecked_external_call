@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x5fa42a2d903e63487505e6f26b6e3d4da2943b73",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "NFT",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2022-03-11",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-12-02",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x9b4e7bb49c23eb7e296f3d4a4ebb37f8f11c574871bb6bd601e5b7183f2dd201"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        13,
+        25
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xd84bf08264fb8aff4bfaea06b6b6da3741ccc87f",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Auction",
+  "protocol_name": "SushiSwapClone",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2023-11-08",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.77,
+      "line_numbers": [
+        17,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

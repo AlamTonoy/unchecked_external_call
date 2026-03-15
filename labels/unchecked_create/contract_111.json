@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x0540270a212d5003dc5d3cff34cfd1b4e8d3022c",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.13",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2022-05-22",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        15,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

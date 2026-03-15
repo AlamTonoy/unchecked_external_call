@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xeb516bac67d242641435a1714e08a10f054c9512",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Auction",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-02-09",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-12-28",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x27dc8d79eec1ee1a92132957adcfa132f7c00f7dac9d1ae9b8ca42c4a6677576"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.87,
+      "line_numbers": [
+        12,
+        32
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

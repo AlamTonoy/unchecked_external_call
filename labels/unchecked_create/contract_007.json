@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x006dc9df62b153a0001e7119c3b7f2581935095e",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.7.6",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Auction",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-09-25",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.86,
+      "line_numbers": [
+        14,
+        24,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

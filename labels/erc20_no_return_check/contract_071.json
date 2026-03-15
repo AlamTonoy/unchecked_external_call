@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x37aefa3db6f52e65ea6f9f5a87aabcefeeaae4df",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.13",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Payment",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2021-04-14",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        21,
+        25,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

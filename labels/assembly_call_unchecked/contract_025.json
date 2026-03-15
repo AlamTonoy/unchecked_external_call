@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x8b9c5f6e7fe271386f9b8022413219dec4f2a700",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.7",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-05-26",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        11,
+        22,
+        25,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

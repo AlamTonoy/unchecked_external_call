@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x75cf7da59e892e454bf201a91cd7543bab796ef6",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "NFT",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2021-12-29",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        19,
+        20,
+        21,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xf25f9c743de499e80f313bf42af1d02c731a07f3",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Auction",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2024-07-11",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-01-08",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x61566407f69e6a984410a61fe77c7fc379433f081e79cdf40e44fc59733a496b"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        16,
+        22,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x3e1986f826f361d317527835ffeeaa44c9485341",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2022-11-06",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-01-04",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xfbf646e03641c7142b045c178bedab9c90ed785aff9f9a29a1d6d960ffd4f824"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.95,
+      "line_numbers": [
+        12,
+        15
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

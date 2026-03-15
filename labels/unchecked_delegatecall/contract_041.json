@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x64f4ff09c4d8d3f72185b65127e15e6d270f13e7",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Vault",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2021-10-30",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-10-07",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xc599d11b26eecb20704daeba1241f100eced744d1927d2c873465277f4ad6ecd"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.92,
+      "line_numbers": [
+        12,
+        19,
+        20,
+        31
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

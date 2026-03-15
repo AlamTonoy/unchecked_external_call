@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x643d05ad6f30a32ec0a608dfcd04e13ace3ebbfa",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.0",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-04-29",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-01-09",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x7b549b0129999148ff0a93b1f6974016881712914ba19cc7ae592b5288ade3c2"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.79,
+      "line_numbers": [
+        15,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

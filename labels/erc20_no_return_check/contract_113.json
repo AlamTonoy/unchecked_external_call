@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x74a373b7513b8798d5bd5e5535a955146037e3f8",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2023-05-11",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        29,
+        31,
+        35
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

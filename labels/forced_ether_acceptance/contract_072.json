@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x717f6f712614686b907efef21b2c197a0dc71634",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.17",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-03-10",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-05-26",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xd8458ea2626de714af87eb8d9dcef81ba93b999ea38e411e2c10bb8276e39837"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.93,
+      "line_numbers": [
+        12,
+        22,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

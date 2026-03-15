@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x8ae941214b9830771a60b8c31ec499315a397e37",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Staking",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2021-01-12",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 1.0,
+      "line_numbers": [
+        17,
+        23,
+        25,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x51ae55c370c22d6376f2157fbcbc41c041fa6090",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "MakerDAOClone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-06-15",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.99,
+      "line_numbers": [
+        13,
+        14,
+        19
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

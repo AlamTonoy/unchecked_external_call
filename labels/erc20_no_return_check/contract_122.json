@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x2479191ed3b8f0c70b88bf99d7cf701ae42430f9",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "DAO",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2024-10-17",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-12-04",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x02bda47c81ddf0c3e1dcaeeb40d8eaa9c658978ac67823c6f25447efbc46d8e4"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.76,
+      "line_numbers": [
+        28,
+        30,
+        33
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

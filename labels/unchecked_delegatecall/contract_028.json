@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xad7dc11b3b11f0c3015873f924ad0202328fbb12",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-11-17",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.88,
+      "line_numbers": [
+        16,
+        30
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

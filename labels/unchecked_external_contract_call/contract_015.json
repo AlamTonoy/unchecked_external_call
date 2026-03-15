@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x98d2a4c46467c0c3cb6406f97c831977e9b27168",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Yield",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-06-28",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-06-21",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x2d346f58a4366fe4cdb6b5a541a4ee1100228191d4f3cda6eb48bc4b2cd84a33"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.98,
+      "line_numbers": [
+        13,
+        14,
+        26,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

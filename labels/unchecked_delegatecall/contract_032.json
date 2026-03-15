@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xdaed50a9e4843257bb76ce79caf110000407bf15",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-03-26",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-09-24",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xce44eec3eba0e7013d984b7b21a07d6f901c447c04d370add6f73d059772a582"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.93,
+      "line_numbers": [
+        18,
+        21,
+        30,
+        35
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

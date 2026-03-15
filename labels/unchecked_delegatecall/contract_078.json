@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x86480638ffee88f53ecad620577405955632d985",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.6.12",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Insurance",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2024-01-31",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-06-28",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0x111cf1f054fa0b20b53deb1201275c9d026ce113b2efaa4a904f7cbd78eb9503"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.94,
+      "line_numbers": [
+        16,
+        19,
+        22,
+        25
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

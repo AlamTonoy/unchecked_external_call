@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x89cd02ff5708c2a066779a49a25c73696fb1b57c",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Staking",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2022-07-15",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.78,
+      "line_numbers": [
+        14,
+        20,
+        21,
+        22
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

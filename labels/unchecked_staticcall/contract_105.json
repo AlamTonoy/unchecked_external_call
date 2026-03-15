@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x6b09f3709feffe1e3a49a851446f532562686c2c",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-09-20",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.89,
+      "line_numbers": [
+        10,
+        19,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

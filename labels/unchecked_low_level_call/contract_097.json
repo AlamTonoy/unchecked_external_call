@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x16eefdeb43289d82c4a8d271a33ca16b2eec347e",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Lending",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-06-28",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-06-22",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x5ebbacf63441593f9256b49366cce2a910d5d43a24bdd058b4d9a34f0c2bde3b"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.98,
+      "line_numbers": [
+        29,
+        33,
+        35
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

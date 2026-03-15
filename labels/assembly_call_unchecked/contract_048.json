@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x764a39261acdb715d74ae61bb8a8bf4a6c93f1a6",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "NFT",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-12-07",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-06-23",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xaea570ad7335f12ab3c8357106a9b59f53cd3040b5d95af0fb982a2154ccab30"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        10,
+        14,
+        20,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

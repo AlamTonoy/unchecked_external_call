@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x52972a384f0308f6db06bb2dad18ec79dee750a9",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-03-14",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-11-26",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x1c0735292a08ee423f3c393406b0df9fba09a37e524257d06f4e847f319ccc45"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.99,
+      "line_numbers": [
+        21,
+        23,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

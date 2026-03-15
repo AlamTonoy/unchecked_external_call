@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xeb491b500da91aa909077b9e9e34510bed7a241c",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2024-10-14",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-06-13",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x2f4e730e2eb7819a290c684d48f4ae3f8b31d5b2875ce433e1be162efb9046df"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.85,
+      "line_numbers": [
+        12,
+        14,
+        15,
+        28
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

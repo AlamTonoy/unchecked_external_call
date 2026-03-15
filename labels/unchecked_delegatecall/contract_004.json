@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x65813f6359a5cf12d73297b93c44525960bcc85a",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-12-28",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-02",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0xc2b27f062c7b86464ea895a2839b847eebd28d0621f43b85072583ae4dd94964"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.89,
+      "line_numbers": [
+        27,
+        35
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

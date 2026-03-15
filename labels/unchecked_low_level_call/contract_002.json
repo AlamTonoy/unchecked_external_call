@@ -1,0 +1,40 @@
+{
+  "contract_id": "0x2fee9715fc3391bdf82af289fecbb6a5e7310890",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Yield",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-07-04",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-12-23",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xa32e97cc31667baf165d337643e7d80fdfed273606f4c76ff8b24f98b098d2f1"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        14,
+        16,
+        21,
+        34
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

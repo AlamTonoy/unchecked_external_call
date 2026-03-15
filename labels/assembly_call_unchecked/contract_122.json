@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x758a27379cceec3bedb67a565eba5443cb2e4149",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Escrow",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2020-02-04",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        23,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x6499d547616034ff206edf756410e6a52e25f808",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Staking",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-05-04",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.93,
+      "line_numbers": [
+        18,
+        33,
+        34
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

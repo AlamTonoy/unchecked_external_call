@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x3aa6d816415b46a5a79f59aa7ba100f13865fb89",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Yield",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2024-07-05",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-08-20",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xb3735f5ea04ffd13af05fc3d89d3cc94ff8c1d25c9042611759739bea4a0fd61"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.93,
+      "line_numbers": [
+        34,
+        40
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

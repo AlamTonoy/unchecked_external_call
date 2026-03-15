@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xc80adf33a47528fd9eb67d93c9cd18c5d47c410e",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.20",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Auction",
+  "protocol_name": "SolarbeamFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-07-08",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "line_numbers": [
+        12,
+        24
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

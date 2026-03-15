@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x670eae8a8ff1834f71cc63eecb84b22c672d4d4a",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.23",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "DAO",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-08-06",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-04-19",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x9a8a87d4948a4f69f9b3c56429026ccdfc4f66f8f1f22c2aafa482e33784fa18"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.87,
+      "line_numbers": [
+        13,
+        17,
+        19,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

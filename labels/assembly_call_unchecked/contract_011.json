@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x441f882823a5673cf617994c8106159bc0c10467",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Options",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-09-27",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-12-20",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x02014b91650ff89738aae460fa0633beca3a2335af709c5afda8266dd76fc7e8"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.78,
+      "line_numbers": [
+        13,
+        19,
+        20,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

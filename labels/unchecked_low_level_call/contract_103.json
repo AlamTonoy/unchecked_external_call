@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x68bf3606015fb3e20a544964751aac25cb993491",
+  "collection_source": "github_repository",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2020-10-26",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-01-14",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x185bf3b0384edefe7be16e809b209cbb6adf2c6c64223bec7b843b820302ee4c"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        11,
+        37
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

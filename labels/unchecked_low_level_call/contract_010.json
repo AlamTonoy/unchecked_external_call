@@ -1,0 +1,40 @@
+{
+  "contract_id": "0xa40c7ae29a7155ad5b4fd8755f68fa8635cac38e",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-10-12",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        10,
+        28,
+        34,
+        40
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}
