@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xbc4001cbd9ecde0196bdd6ced1b2e6c26cc0c22e",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Staking",
+  "protocol_name": "RocketPool",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2023-03-22",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-06-03",
+    "exploit_value_usd": 50000000,
+    "exploit_tx": "0xe85f913d160dc085d4d878b2eb1ceef69faa2bc480fe86644165fbc941c5e7a3"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.93,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

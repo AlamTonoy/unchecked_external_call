@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x8f09676204bd65357afffaa8f921529620d2fb72",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.6.12",
+  "solidity_version": "0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "AMM",
+  "protocol_name": "UniswapV2Clone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-07-28",
+  "audit_status": "PeckShield_2021",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-10-11",
+    "exploit_value_usd": 100000000,
+    "exploit_tx": "0x53c383e04708f224e205ef43e2caabddd6ef48657828a87dfae932f1f48bec29"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.95,
+      "line_numbers": [
+        9,
+        12
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

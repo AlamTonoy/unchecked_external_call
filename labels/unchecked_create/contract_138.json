@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xc60faf64f92e574c044374ee31786fa0a4c1a8b7",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "DutchAuction",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2022-01-07",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-06-23",
+    "exploit_value_usd": 5000000,
+    "exploit_tx": "0xb9377cc7e3ccb19b4b4f4cf01f43f62ed389ba1d42e77d9e6dc47614f2e797d2"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.87,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

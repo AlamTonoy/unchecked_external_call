@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x99ab7bcf6cac70c0f64f238a52cf035bdaf2abec",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Lottery",
+  "protocol_name": "PoolTogether",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-10-14",
+  "audit_status": "Hacken_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-02-09",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x8678623c353f11f25042c9f1f3d1f4603e9ea8250a10fdca6371b747821b6ccd"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.91,
+      "line_numbers": [
+        9,
+        12
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

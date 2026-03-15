@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xa1c062cfe56e61ce50a0d5313997a7eb702325b5",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "AMM",
+  "protocol_name": "UniswapV2Clone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2019-06-15",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2019-07-28",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x2d056143ef0c0fca55f496f1155ecafac9a21986146b758fbdbea77a1eb37e2b"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.75,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

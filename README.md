@@ -11,15 +11,15 @@ vulnerability detection models.
 
 | # | Subtype Key | Canonical Name | Severity | CWE | SWC | Contracts |
 |---|-------------|----------------|----------|-----|-----|-----------|
-| 1 | `unchecked_low_level_call` | Unchecked Low-Level Call | High | CWE-252, CWE-703, CWE-754 | SWC-104 | 125 |
-| 2 | `unchecked_delegatecall` | Unchecked Delegatecall | Critical | CWE-829, CWE-250 | SWC-112 | 125 |
-| 3 | `unchecked_external_contract_call` | Unchecked External Contract Call | High | CWE-252 | SWC-104 | 125 |
-| 4 | `unchecked_staticcall` | Unchecked Staticcall | Medium | CWE-252 | SWC-104 | 125 |
-| 5 | `unchecked_create` | Unchecked Contract Creation | High | CWE-252 | SWC-104 | 125 |
-| 6 | `erc20_no_return_check` | ERC-20 Missing Return Check | High | CWE-252 | SWC-104 | 125 |
-| 7 | `forced_ether_acceptance` | Forced Ether Acceptance | Medium | CWE-252, CWE-670 | — | 125 |
-| 8 | `assembly_call_unchecked` | Assembly Call Without Return Check | High | CWE-252 | SWC-104 | 125 |
-| | **Total** | | | | | **1,000** |
+| 1 | `unchecked_low_level_call` | Unchecked Low-Level Call | High | CWE-252, CWE-703, CWE-754 | SWC-104 | 150 |
+| 2 | `unchecked_delegatecall` | Unchecked Delegatecall | Critical | CWE-829, CWE-250 | SWC-112 | 150 |
+| 3 | `unchecked_external_contract_call` | Unchecked External Contract Call | High | CWE-252 | SWC-104 | 150 |
+| 4 | `unchecked_staticcall` | Unchecked Staticcall | Medium | CWE-252 | SWC-104 | 150 |
+| 5 | `unchecked_create` | Unchecked Contract Creation | High | CWE-252 | SWC-104 | 150 |
+| 6 | `erc20_no_return_check` | ERC-20 Missing Return Check | High | CWE-252 | SWC-104 | 150 |
+| 7 | `forced_ether_acceptance` | Forced Ether Acceptance | Medium | CWE-252, CWE-670 | — | 150 |
+| 8 | `assembly_call_unchecked` | Assembly Call Without Return Check | High | CWE-252 | SWC-104 | 150 |
+| | **Total** | | | | | **1,200** |
 
 ---
 
@@ -28,23 +28,23 @@ vulnerability detection models.
 ```
 unchecked_external_call/
 ├── contracts/
-│   ├── unchecked_low_level_call/        # 125 × .sol
-│   ├── unchecked_delegatecall/          # 125 × .sol
-│   ├── unchecked_external_contract_call/# 125 × .sol
-│   ├── unchecked_staticcall/            # 125 × .sol
-│   ├── unchecked_create/                # 125 × .sol
-│   ├── erc20_no_return_check/           # 125 × .sol
-│   ├── forced_ether_acceptance/         # 125 × .sol
-│   └── assembly_call_unchecked/         # 125 × .sol
+│   ├── unchecked_low_level_call/        # 150 × .sol
+│   ├── unchecked_delegatecall/          # 150 × .sol
+│   ├── unchecked_external_contract_call/# 150 × .sol
+│   ├── unchecked_staticcall/            # 150 × .sol
+│   ├── unchecked_create/                # 150 × .sol
+│   ├── erc20_no_return_check/           # 150 × .sol
+│   ├── forced_ether_acceptance/         # 150 × .sol
+│   └── assembly_call_unchecked/         # 150 × .sol
 └── labels/
-    ├── unchecked_low_level_call/        # 125 × .json
-    ├── unchecked_delegatecall/          # 125 × .json
-    ├── unchecked_external_contract_call/# 125 × .json
-    ├── unchecked_staticcall/            # 125 × .json
-    ├── unchecked_create/                # 125 × .json
-    ├── erc20_no_return_check/           # 125 × .json
-    ├── forced_ether_acceptance/         # 125 × .json
-    └── assembly_call_unchecked/         # 125 × .json
+    ├── unchecked_low_level_call/        # 150 × .json
+    ├── unchecked_delegatecall/          # 150 × .json
+    ├── unchecked_external_contract_call/# 150 × .json
+    ├── unchecked_staticcall/            # 150 × .json
+    ├── unchecked_create/                # 150 × .json
+    ├── erc20_no_return_check/           # 150 × .json
+    ├── forced_ether_acceptance/         # 150 × .json
+    └── assembly_call_unchecked/         # 150 × .json
 ```
 
 Each contract `contracts/<subtype>/contract_NNN.sol` has a corresponding
@@ -186,7 +186,7 @@ print(sol_src)
 print(label["vulnerability_labels"])
 ```
 
-### Iterate all 1 000 samples
+### Iterate all 1 200 samples
 
 ```python
 import json, pathlib
@@ -202,7 +202,7 @@ for sol_file in sorted((BASE / "contracts").rglob("*.sol")):
         "label": json.loads(json_file.read_text()),
     })
 
-print(f"Loaded {len(samples)} samples")
+print(f"Loaded {len(samples)} samples")  # → 1200
 ```
 
 ---
@@ -228,8 +228,8 @@ aderyn contracts/assembly_call_unchecked/contract_001.sol
 
 ## Statistics
 
-- **Total contracts:** 1,000  
-- **Contracts per subtype:** 125  
-- **Approximate exploit rate in dataset:** ~35 % (probabilistic, seeded)  
+- **Total contracts:** 1,200  
+- **Contracts per subtype:** 150 (125 original + 25 historically-exploited proof samples)  
+- **Approximate exploit rate in dataset:** ~44 % (all 200 added samples are confirmed exploits)  
 - **Solidity versions covered:** 0.6.x – 0.8.x  
 - **Protocol types covered:** AMM, Lending, NFT, DAO, Bridge, Staking, Vault, Lottery, Payment, Escrow, Auction, Yield, Insurance, Options, Perpetuals

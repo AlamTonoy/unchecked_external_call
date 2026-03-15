@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x576c4f32dc753ae3dba1a833a4e3f6a85f792216",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Yield",
+  "protocol_name": "ConvexFork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2022-03-18",
+  "audit_status": "Trail_of_Bits_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-08-03",
+    "exploit_value_usd": 7500000,
+    "exploit_tx": "0x6d7be7bd5c501a446847f05c3c1f7d587d296ddcb08325d8e2b34ad226503fe5"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.88,
+      "line_numbers": [
+        14,
+        17
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x898f892a7e3ee2241b644db92e4a5da4881e50bc",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lending",
+  "protocol_name": "AaveFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2020-04-18",
+  "audit_status": "OpenZeppelin_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-06-27",
+    "exploit_value_usd": 80000,
+    "exploit_tx": "0x4ea1ca999ebd95ef9333f8c252bbffbd601e705026c86f3671fd6516448698c1"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.77,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

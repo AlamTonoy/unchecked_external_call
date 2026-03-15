@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xf420216a6cbbe9bd886bb8ed7609e8c0edf359fb",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Staking",
+  "protocol_name": "CurveGauge",
+  "total_value_locked_usd": 500000000,
+  "deployment_date": "2021-07-11",
+  "audit_status": "Halborn_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-10-27",
+    "exploit_value_usd": 1500000,
+    "exploit_tx": "0x52350850f41302e3da6b363b2b36d8c5dc5bb9c6bd1201dfa58d9778092fcc65"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.84,
+      "line_numbers": [
+        12,
+        15
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

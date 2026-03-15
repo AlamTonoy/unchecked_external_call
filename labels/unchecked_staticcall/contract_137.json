@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x23311ceb8e79678b72e71caec2220c2a2d32cdf9",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 10000,
+  "protocol_type": "Escrow",
+  "protocol_name": "MultiSigEscrow",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-11-30",
+  "audit_status": "Sherlock_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-04-17",
+    "exploit_value_usd": 3200000,
+    "exploit_tx": "0x43c6c601c1b05cd2b2941b544818de23ee20029db292d155ec6dc3e7bbe810be"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.86,
+      "line_numbers": [
+        10,
+        14
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

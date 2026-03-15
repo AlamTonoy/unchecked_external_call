@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x7f555479f5bbb712c20cc1f9c6bfb2fd9c7c1e92",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": ">=0.7.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Vault",
+  "protocol_name": "YearnFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-03-14",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-04-30",
+    "exploit_value_usd": 600000000,
+    "exploit_tx": "0x12cc581deada6d7ad3b340d57d0ccc86ea234d04aa72394b2cc4ab57439cbdec"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.99,
+      "line_numbers": [
+        11,
+        14
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

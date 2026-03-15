@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xbf8467e83c8c0b533dd1bb5bd701c03be91627af",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lending",
+  "protocol_name": "AaveFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2023-11-10",
+  "audit_status": "Code4rena_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-01-02",
+    "exploit_value_usd": 200000000,
+    "exploit_tx": "0x69a2eaf4223b76feb5730176d6726e779f9bdb74f45d3e7de1582e601dbfae70"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        18,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x6c65060bd537d56df18f37411e97e1dd76d22141",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.15",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 10000,
+  "protocol_type": "DAO",
+  "protocol_name": "SnapshotVault",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2021-03-08",
+  "audit_status": "Sigma_Prime_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-06-18",
+    "exploit_value_usd": 750000,
+    "exploit_tx": "0x1a15d4e9f3dcbfa8b96ca2cb780282ecf8bc2cd194fa805f78356ab89a01c2cc"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

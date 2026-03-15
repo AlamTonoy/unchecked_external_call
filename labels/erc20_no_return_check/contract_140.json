@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xfae5c7826fcdf3754d83350d5904d5b46eb5917f",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Options",
+  "protocol_name": "OpynFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2022-06-22",
+  "audit_status": "OpenZeppelin_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-11-11",
+    "exploit_value_usd": 10000000,
+    "exploit_tx": "0x4d014424498fb80b16c8334edd223624582f768bf392b2c4ef5a8a9f4b9643c5"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.89,
+      "line_numbers": [
+        18,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

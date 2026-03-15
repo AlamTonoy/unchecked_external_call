@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xf62969db99205bca0de957797723b9433ff71e5f",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 10000,
+  "protocol_type": "DeFi",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 500000000,
+  "deployment_date": "2023-05-17",
+  "audit_status": "Sigma_Prime_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-08-19",
+    "exploit_value_usd": 80000000,
+    "exploit_tx": "0xc46617f56fc2788c731e182f8ec3eec7a51ef5f1cb864ba1086296c038539556"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        12,
+        15
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}
