@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x5e3c11ac38a2586e4db19da54d8d1f4f8f613013",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Options",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2021-07-02",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-06-18",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x9671a23dcfe23b6b29fecf134d061f6125f484733e0413a53bfe4d58a7552f4b"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        27,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

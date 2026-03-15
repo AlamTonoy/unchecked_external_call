@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xff52ab577cee182f2c713102b90bf4f5d5a3a383",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2020-12-03",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-10-26",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0xcf939a868c39ce8c67e302e6949fb96e048fd2d4b5ee97f44ef1baca0f79ad91"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        19,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

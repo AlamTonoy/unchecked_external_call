@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x1dea001ba3c521a4a6eafb5342c1d1aa9b4b6b8d",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Staking",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2020-05-29",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.93,
+      "line_numbers": [
+        11,
+        13,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x6c55165934f99528d3dff358ec58da8611451d67",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.13",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Staking",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2023-03-12",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-09-11",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0xda9b81cace3e4a5ef4d850b63ffa94c346568f9c40a89b843f080d30d41260bc"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        14,
+        21,
+        25,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

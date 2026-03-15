@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xaf61518f0b0541869ad8a85abeaf18d39b2d57de",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "SolarbeamFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2022-04-17",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        26,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

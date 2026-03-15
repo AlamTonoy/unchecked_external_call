@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xeb0b86685f3a33a747ca8f03fd33b5653fe1fc6c",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Yield",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-01-16",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.85,
+      "line_numbers": [
+        10,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

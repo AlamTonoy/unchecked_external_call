@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x97bd130027b0a95af842318ab262a9db463e4479",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "NFT",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2023-08-05",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        19,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xd88995ab4924dac44dfa75340461446c78cb22ec",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2024-12-11",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        12,
+        14,
+        16
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

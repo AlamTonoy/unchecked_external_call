@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xaf69810e79a77b4a6d68dfdc84a4a404986d36fb",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2020-09-19",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-06-03",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xf31554bdfe12ff880f35fa6b7705f8de2e32439887e55c67f28d1214b4f8465c"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.87,
+      "line_numbers": [
+        11,
+        12,
+        23,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

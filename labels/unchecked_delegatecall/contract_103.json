@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xf8cdc5d3d5b7d143a688116d4bd3f9ce837a58b3",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-10-11",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-11-14",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x991f3ddf2224204a2de9b570c10bbd4925cda0791a2c879b7bfd932174244ea3"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.85,
+      "line_numbers": [
+        17,
+        20,
+        28,
+        29
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

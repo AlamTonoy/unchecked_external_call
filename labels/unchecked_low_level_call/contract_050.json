@@ -1,0 +1,40 @@
+{
+  "contract_id": "0x8c1ae80fa66db6f7c5ced964ce19840b08863c61",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.7",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Vault",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2020-12-29",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.9,
+      "line_numbers": [
+        11,
+        29,
+        35,
+        38
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

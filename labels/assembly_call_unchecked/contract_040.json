@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x653feec0a86f1f4a604a0863fac62f07729dbf83",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Auction",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2024-01-17",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-03-18",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x7927174d032d5a7e11076e29af14f8e5913e4103a3917b26f81bccccf6aa893d"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.86,
+      "line_numbers": [
+        11,
+        12,
+        27,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

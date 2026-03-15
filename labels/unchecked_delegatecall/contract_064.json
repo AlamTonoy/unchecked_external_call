@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x88953bb582a60dcfc344eadd911d23bed029cb95",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.4",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "AMM",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-04-01",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-03-10",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xde9f1a7916ab12def6c21ca161e09025b873eb3436302aa482c210868ed95296"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.75,
+      "line_numbers": [
+        26,
+        31,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

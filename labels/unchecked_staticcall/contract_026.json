@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x3de319f3fef823db5fea03e1c368510012148724",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.20",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Vault",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-09-02",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-11-03",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x497e0af4aa4b4205dc461a1155b92bcfa23f6db216cbc9cf8bed77751871c91f"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.81,
+      "line_numbers": [
+        16,
+        19,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

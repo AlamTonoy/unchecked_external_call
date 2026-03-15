@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xef7653c87c9ec31ff78a1fa6890ff6976162b603",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-07-15",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-07-13",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x066dbd42ed721f54f55bd05dd46125d52aee5c314e09d3a32b19ee9ee31dea1d"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.95,
+      "line_numbers": [
+        12,
+        21,
+        23,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

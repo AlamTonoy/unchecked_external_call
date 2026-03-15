@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xce403fe41b08d3ef3dd3961710ca7114b66a8e3b",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2023-10-02",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-01-21",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0xc49df35eaf119cc4ab55e55f195975fdf5a942e00c8a073b6df1f1e067720046"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        16,
+        18,
+        29,
+        33
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x3f3a7a3b0d89d98b98480f55644de70667480d8a",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2021-07-13",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-03-26",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x63a79e8ecc1d37de99179059d718b7136d2574f0221d86ab860794b9f7c1658a"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.81,
+      "line_numbers": [
+        17,
+        27,
+        28,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

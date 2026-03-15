@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x3d21e7c97d217e9edb42f91d774c151750ea612a",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Auction",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2021-05-30",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-08-15",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x96747f5be682cd75c7af119fda916b0dfa027dcb428df0f388c6c4e59b1c88bd"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.9,
+      "line_numbers": [
+        17,
+        21,
+        22
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

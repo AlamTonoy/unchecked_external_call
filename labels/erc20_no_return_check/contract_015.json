@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x573b1213cb853cc24b3c4c5c48b3683b5540dfbe",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2022-06-11",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-02-11",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xf0cfbacb2b7f75e00e0302129f11d9338e1fe632bb1437505d6878ccfaac1282"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.98,
+      "line_numbers": [
+        28,
+        30,
+        34
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

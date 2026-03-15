@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xcef6c94a65e9d048573596a9077622e0962fe500",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.6.12",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "NFT",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-06-28",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-10-02",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x22459e7e88a74f367b7eaded7ded806eb9946502f722a4ebee30225341877e49"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.89,
+      "line_numbers": [
+        14,
+        17
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

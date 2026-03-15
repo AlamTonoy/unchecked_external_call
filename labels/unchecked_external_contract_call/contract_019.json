@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xa58bb6ce9eb23ec6e21727aefb834f4886a0c684",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-12-03",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.92,
+      "line_numbers": [
+        22,
+        24,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

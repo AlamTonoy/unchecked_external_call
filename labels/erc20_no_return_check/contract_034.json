@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xedef7af0d2f52283b6c8846d1dd4d2cde91179c6",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.17",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-10-20",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-07-15",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0xf363f0be56f3bcfeb5d41f6dca5e667ceb49f4b40edd1cf474b0782f2dfab36c"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        17,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

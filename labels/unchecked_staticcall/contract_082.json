@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x852cde4d14c7b75b3d7749996895cf57791eac45",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "DAO",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-10-04",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.95,
+      "line_numbers": [
+        11,
+        18,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x911436883fbf6ef6b8900773877dd4858d574ecc",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2020-07-23",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.79,
+      "line_numbers": [
+        17,
+        23,
+        26,
+        27
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

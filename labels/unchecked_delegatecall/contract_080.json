@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x199620f3aece2581770907152b826f1cb25ec8eb",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "QuickSwapClone",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2023-02-26",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.88,
+      "line_numbers": [
+        17,
+        22,
+        26,
+        30
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

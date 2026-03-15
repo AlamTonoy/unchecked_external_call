@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x615e9704801b4c52143616616036196bc5b4fe26",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "DAO",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2021-04-17",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

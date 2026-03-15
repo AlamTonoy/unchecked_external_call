@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x441c9c5c94cda72cf1c22d5e087a5818667488ed",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "NFT",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2023-09-12",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-02-17",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0xa865057ab38ff62b07804154e90470b4afddefa77dcc00e2bd26d0a018f390dd"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.83,
+      "line_numbers": [
+        18,
+        35
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

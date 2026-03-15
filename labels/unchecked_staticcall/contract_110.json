@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x2b5402eac4f892e5a8bdef1c3061805799e02980",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2022-02-12",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.76,
+      "line_numbers": [
+        23,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

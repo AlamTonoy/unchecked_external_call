@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x77f5beccdca9c885e1de382d7ab7e702698a4040",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "DAO",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-08-27",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-05-25",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x06ccfa6f6de6aa8a5288b3004a88d354eb1c6ce03109b0b633d084db59a542a3"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        14,
+        40
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

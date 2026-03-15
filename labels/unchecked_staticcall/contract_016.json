@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xf7af5b91920de136db9b748a207174c8a388b778",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.19",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2021-11-18",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.8,
+      "line_numbers": [
+        10,
+        14,
+        16,
+        22
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

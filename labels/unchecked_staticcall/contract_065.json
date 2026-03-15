@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x3199867a08a36623657a576b2941cedb3b70c48b",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Bridge",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2021-07-30",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.77,
+      "line_numbers": [
+        10,
+        11,
+        16,
+        17
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xb58f5a5523af60aecd07d91034fad19c896518a5",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "DAO",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-01-01",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.93,
+      "line_numbers": [
+        19,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

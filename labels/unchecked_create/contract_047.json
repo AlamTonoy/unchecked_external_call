@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x544f94ec8b4092ec15ef83e5300cac329e2eac55",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-11-14",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.95,
+      "line_numbers": [
+        15,
+        19
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x3f0dc2b2beb381e66e2e0b4f6f318f47504cf8f0",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "DAO",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2024-02-14",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.76,
+      "line_numbers": [
+        16,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xad6e397a9e92da5008c5bf46b75d81fa97b5964b",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Yield",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-04-21",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.85,
+      "line_numbers": [
+        18,
+        19
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

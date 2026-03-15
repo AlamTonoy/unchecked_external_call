@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xc9809d82f3faddf824da34c24044c3066576b6a2",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Lending",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-08-31",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.81,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

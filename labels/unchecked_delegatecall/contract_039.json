@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x62ee46b532f32a155eed14d80fd154801b808a57",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Staking",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2024-06-06",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.76,
+      "line_numbers": [
+        21,
+        32
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

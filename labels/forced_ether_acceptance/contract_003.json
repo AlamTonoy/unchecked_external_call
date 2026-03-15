@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x97dee1a965e8f279b9f1b4d34a791844b14c023a",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Insurance",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2023-09-21",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-03-03",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xe271cd45efed952aa74eecefcb618c7402dca20c2b2e3d513c9af959defab545"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.88,
+      "line_numbers": [
+        21,
+        22,
+        26
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

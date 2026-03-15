@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x46834b62c88224369dbfaa7f32d9b9a32fe16940",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Vault",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-11-21",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-11-02",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x586eeb143ca1c80561770b0212a5216440b74eef0ec3d978776bc7be2c2474b2"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        19,
+        20,
+        22,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x1b93585270246209a1b14f9c6f68a698327719c2",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Auction",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-10-10",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-05-07",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x3a3a9eb39a6408b953229505c44ac4002f748c74774f63e6f45035339646271e"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.89,
+      "line_numbers": [
+        12,
+        30,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

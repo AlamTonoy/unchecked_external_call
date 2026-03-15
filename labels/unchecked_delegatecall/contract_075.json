@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xeab18d3610be453f9cc4cc8256f5a10bf7ce0d45",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Yield",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-02-16",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-10-25",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0xfa610ae411df34c819e9c780cc684289929c8888a18aac10c65d9e092f2ec5da"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.89,
+      "line_numbers": [
+        29,
+        31,
+        32,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

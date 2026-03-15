@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x41b7b726305d9f7b1e9d909725a9ceb3bd2ff820",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-05-15",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.76,
+      "line_numbers": [
+        18,
+        21,
+        22,
+        29
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

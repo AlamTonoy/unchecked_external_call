@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x2aea6f142ea78ae5ef25abd9fcd6def88948fbac",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-12-11",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-11-01",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x56c1a7de30c8121f36d81d0012c14f656b463697907050bd681b95f7007e781b"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.93,
+      "line_numbers": [
+        21,
+        23,
+        26
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

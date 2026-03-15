@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xe0148eb206bf2dee568b1ee99f0b5767d4722cee",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.19",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Lending",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-05-12",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-01-21",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x2b4c370888e46cf0feb64e5524732f49134188290e837d54f6727ebe1e7124af"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.95,
+      "line_numbers": [
+        17,
+        18,
+        27,
+        32
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

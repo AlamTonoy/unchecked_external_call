@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x40b9e960db44f422356b29fe174f8663808600fd",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "DAO",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2022-12-27",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-18",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x6de0a46e1e796c60897f85e9afed66a9518c87ab327785547a00ccb883856cbe"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        24,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

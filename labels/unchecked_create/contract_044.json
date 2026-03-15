@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x3a9d925f79ffb4a63c778267c81ecc6c103b64d8",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Bridge",
+  "protocol_name": "UniswapV2Fork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2020-01-01",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.86,
+      "line_numbers": [
+        12,
+        15,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

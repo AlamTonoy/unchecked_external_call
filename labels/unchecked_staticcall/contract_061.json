@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x72ee64fb42bd93246572203cf8371524f8e9ebf4",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "QuickSwapClone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2020-09-09",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.83,
+      "line_numbers": [
+        18,
+        19,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

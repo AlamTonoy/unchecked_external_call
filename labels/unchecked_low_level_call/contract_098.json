@@ -1,0 +1,40 @@
+{
+  "contract_id": "0xe20667561b4eb815cd0e4a977e3c3a5d1cd6fa20",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Staking",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2024-05-08",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-04-24",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0xb316492bcfa17d6a7011ae39f7b196fb425bd86b6dc81d8dac3a1db07509a14c"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        19,
+        22,
+        31,
+        36
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x838e8866e663fa71e726e94a261dba78ba4b4dcc",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.6.12",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Lottery",
+  "protocol_name": "SushiSwapClone",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-07-09",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-03-16",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x24d1bcbb8ae7fbd1e1980ed1e03ddcd3fb8c1e0648a357c3a730a04c4a4ef21b"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 1.0,
+      "line_numbers": [
+        17,
+        18,
+        33,
+        34
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x2b07d8b2777bc1c45b786090e202d2443a0b7daf",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.23",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Lending",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-05-03",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-12-11",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x5956c609a83440b2edff6b373b2114fb754a6c5c91f0b06d208259347578d348"
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        12,
+        18,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xedc1acae9eaaa6844c708fde4c0de3248627ef27",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Vault",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-03-08",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.98,
+      "line_numbers": [
+        16,
+        20
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

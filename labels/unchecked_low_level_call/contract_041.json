@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xa460cc0ea904c4fa66547ad618ad5a9411fad4be",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-03-02",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-06-11",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xbaf4660b93b38cea8dde2124cc2a515b4c544d7d9f1e8d640d2369e75bc7a2a0"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        17,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x7d76a1d9dcf4a94022da9ec708e731448b6f5777",
+  "collection_source": "github_repository",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Insurance",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2024-11-01",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-02-14",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x6ea3204165d957ac23bee012719ed2b7222f4c90722b0c300ff32da4e4e1a748"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.86,
+      "line_numbers": [
+        10,
+        16,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

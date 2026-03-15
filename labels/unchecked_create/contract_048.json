@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x30a188c882ef0d52d8980d88da9c86cb074d25ba",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.0",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "AMM",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-02-10",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        19,
+        21,
+        29,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xeadd50363c6f70fd4226f746b2d6b375b457bc30",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.6.12",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2024-06-17",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.85,
+      "line_numbers": [
+        11,
+        12,
+        27
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

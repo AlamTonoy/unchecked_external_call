@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xb742ac144c154a2058558591ea9e347e495d839c",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Lending",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2023-04-12",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.93,
+      "line_numbers": [
+        14,
+        16,
+        20,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

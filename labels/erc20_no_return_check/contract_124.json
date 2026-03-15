@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x66918d2e63e7a9747e76666ecfb3b1eccfe3421f",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-06-23",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-09-22",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0x41093f00d19861495a83637c078c1870e5aff4f1ef0b94f2da8903c2cd5e59e5"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        23,
+        24,
+        26,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

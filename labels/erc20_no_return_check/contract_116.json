@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xd785555a1bedee12c2467bdab180ea641ea7df9f",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.0",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Bridge",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-01-15",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.87,
+      "line_numbers": [
+        16,
+        27,
+        32
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

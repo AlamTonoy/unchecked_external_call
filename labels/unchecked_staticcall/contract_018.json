@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x776e03aac7da057abc973ea3a33e1b709e7040c6",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Yield",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2020-12-04",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.8,
+      "line_numbers": [
+        11,
+        17
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

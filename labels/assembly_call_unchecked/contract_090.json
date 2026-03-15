@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x1eb91c73bddcc4918b254a3e5e591849502b5bba",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Payment",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-10-08",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.75,
+      "line_numbers": [
+        18,
+        20
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

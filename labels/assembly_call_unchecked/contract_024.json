@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x725ce0c60f3b7540b9b0d7d8c4d92cf34e65602f",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-01-10",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-10-20",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xe5e56aa4d3f1d83d3d072dc8739693489376d6388c7c21c78dc260638a054069"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.9,
+      "line_numbers": [
+        11,
+        15,
+        22,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

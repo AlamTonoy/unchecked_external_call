@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x0cb91fe6a7b42e16604f396d284e01d4717fe717",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2022-11-24",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.91,
+      "line_numbers": [
+        25,
+        27,
+        28
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

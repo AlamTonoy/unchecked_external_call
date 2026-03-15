@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x339fc11f17835b6e9aee70d40a321f9b25ec7227",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Vault",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2021-07-31",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.76,
+      "line_numbers": [
+        16,
+        19,
+        27,
+        35
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

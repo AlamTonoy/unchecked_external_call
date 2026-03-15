@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x2f2581ab91b71510fd447cc04a2f9e515454f9f5",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Escrow",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-03-22",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-02-15",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xf5e4d6ae2158d7cc39ee0e6652440d1f5976ec1f4cc7330c68d9f7c62d93261f"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.99,
+      "line_numbers": [
+        28,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

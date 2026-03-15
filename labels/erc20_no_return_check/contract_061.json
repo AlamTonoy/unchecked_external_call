@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xc0c93c3fe353d3b1e9c0c88de8c8b9f7229d709e",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "DAO",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-09-11",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-05-13",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x246763031619460abfbdd44181142c2570180754d02bee2bd2ad2cbea3db316f"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        18,
+        25,
+        34
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xd138f28b7b936dd8ed2a503cf0c9b6af7b6f36c2",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.23",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Insurance",
+  "protocol_name": "UniswapV2Fork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-01-17",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-05-14",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x2a52faa05fea621ae19567909c4694802e0509ba8f9b842e5b8aa4787ceb752e"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.85,
+      "line_numbers": [
+        14,
+        27,
+        29,
+        30
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

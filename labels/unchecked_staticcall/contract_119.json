@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x3a374e1eb0409e4581b45faf2fc3daed95da79f9",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.16",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Vault",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-07-25",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.79,
+      "line_numbers": [
+        12,
+        13,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x569fd3de770227de7de089a8095ec12d5682921c",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Bridge",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2022-11-03",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        13,
+        31
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x3d6d4214c7f1dbfedec061381ae7326d3a6be4b2",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2024-09-27",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-06-07",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x4a19d82fe14353ead5bd2fa6b0b8d3f8f751b40a98b0b8fa05ec65260a61fbc7"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        18,
+        19,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

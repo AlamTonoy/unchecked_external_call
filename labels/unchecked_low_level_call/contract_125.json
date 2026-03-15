@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x512c4d2a29010ad90b0b44ad5b95178355d6ae25",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Insurance",
+  "protocol_name": "QuickSwapClone",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2021-03-22",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-10-26",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x0ee09c8c8953d0b6f11e38986bd807874d433c57b13be558ea9769d28c692445"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        27,
+        29,
+        38
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

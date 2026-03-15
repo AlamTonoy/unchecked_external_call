@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x5d77807fcf38963c4662ac541a95e0e6d122c7f7",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Auction",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-04-12",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-05-26",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x12b15f8f8860cf0786bf2d29f7c0c7f642c1be083c73596c08fa548418c8e5cf"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.76,
+      "line_numbers": [
+        12,
+        17,
+        21
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x2ad875ae5ac934e8c097a7ad23acea662bff89e9",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Payment",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2023-06-28",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-11-23",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x96d230c754a4bf38015282ce707deab86e261602a2e02fa461b57d86fd570e88"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        18,
+        27,
+        29,
+        32
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

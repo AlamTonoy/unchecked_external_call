@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x54cd9bb93e8dde0b5b39ab856cfcfdb20896f4d8",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.20",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Auction",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-04-06",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.8,
+      "line_numbers": [
+        11,
+        27
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

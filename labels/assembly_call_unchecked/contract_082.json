@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xf07769705812c73c6abe7c1cb846a863ff5257b8",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-03-06",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.9,
+      "line_numbers": [
+        16,
+        20,
+        23,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

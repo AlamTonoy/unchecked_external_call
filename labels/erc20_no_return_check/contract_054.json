@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x388664a00fa75d965d50115e023a3b6976ae40a4",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.7.6",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "NFT",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2024-07-15",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-08-23",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0xe5531cebec85d52d9c0fdb02f8c9f9cda8b66900a5ce25fb023f14f1de3772eb"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        16,
+        27,
+        29,
+        31
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

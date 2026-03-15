@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x61799c47d6aa707f4103586301cb79f2e6b1f323",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Escrow",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2024-01-07",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-08-05",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x1de2917ac362c28601124f644a96828331f4848b1203f7faf8c1f778bc978349"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        17,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

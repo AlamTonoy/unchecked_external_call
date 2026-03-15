@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xeda3267a6b2c01610de2c4f9c0c8dd12ced47384",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Payment",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-01-04",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        15,
+        19
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

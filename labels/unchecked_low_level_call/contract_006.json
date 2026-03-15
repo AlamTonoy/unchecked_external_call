@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xd4c737b35e126236570d6cf0e97f46ed8bce7476",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.21",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Auction",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2024-03-03",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.98,
+      "line_numbers": [
+        17,
+        18,
+        34
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

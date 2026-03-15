@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x4e6ec4daa07a2ad08ced377965371ea0cbdde1e5",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Auction",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-02-14",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-18",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0x45af104fb1ec8a1fe33952c2b92bdc5bf5ea332ac7b389057bedc3368f710f02"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.9,
+      "line_numbers": [
+        23,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

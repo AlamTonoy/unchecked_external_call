@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xbc0c096100d696dc977691aa08910b9de2857922",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "SushiSwapClone",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2020-05-04",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        20,
+        37,
+        38
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

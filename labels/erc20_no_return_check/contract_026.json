@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xbeac40d57dcd5f6e4a5675cffd2e08abac356acc",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2024-06-13",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-08-22",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x5bef35dc840816cb8fcd3f29a752db0b39939407d68deaa0e0550d77ad9992eb"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.89,
+      "line_numbers": [
+        21,
+        23,
+        26,
+        31
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xcd142244c575cb3df8dae97244c1e07a2ab3ec7a",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "DAO",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-04-19",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.86,
+      "line_numbers": [
+        19,
+        20,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

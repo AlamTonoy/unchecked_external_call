@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x54e42398830603b298484226d2621d99cddb4762",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2020-02-11",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-12-10",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x17cb2e30dc80802022dd943213ac1607ca6868ff59bbc8687c395496655306a2"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.97,
+      "line_numbers": [
+        14,
+        20,
+        25
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x98322659dab01f11e6f3dc3854846c6aaae17802",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.19",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-05-18",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.98,
+      "line_numbers": [
+        11,
+        12,
+        18
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

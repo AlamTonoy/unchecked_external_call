@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x084751bc2f749fb19a649e02952c98a675de3aa3",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.23",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-04-22",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-05-28",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x5cf4c8398d752d36108182cc02c53ec9624ca6a7773525574f191ec59d1905d0"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        17,
+        18
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

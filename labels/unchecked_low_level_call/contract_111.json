@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x8c1262986db649edfc1a967ce179046376371fe6",
+  "collection_source": "github_repository",
+  "compiler_version": "0.6.12",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Options",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-07-22",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-01-03",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x4eea0e00cd8b529686960e6f6b6523b2196ced25100c298f90bfac2a33dbc640"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        23,
+        27,
+        36
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

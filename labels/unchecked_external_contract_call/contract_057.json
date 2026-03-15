@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xc082e20cde4f6ff09418b86f40e5d628788b66ff",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Escrow",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2024-07-02",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        12,
+        16,
+        24,
+        28
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

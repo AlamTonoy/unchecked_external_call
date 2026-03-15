@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x7eea8ea1fd324bf5fef11e48a12b95e066599b2f",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lending",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-07-15",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-07-02",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x85928a1b7bc18fd12074289d5b0af3987e85420e6207df0563df1baf0927285c"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.94,
+      "line_numbers": [
+        19,
+        20,
+        22
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

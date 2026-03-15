@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x1e9e6311f6dd6e630add39d1647e5f5641efef5f",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "NFT",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2023-02-28",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.97,
+      "line_numbers": [
+        13,
+        15,
+        30
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

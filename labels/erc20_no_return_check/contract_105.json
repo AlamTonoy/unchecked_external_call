@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x4b6fa0aba1761f720653ec98bab668ad662c2fd8",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Options",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-01-30",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-12-18",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0xed948e8140ac2b4f7b434ca7566d923f3e90ef9c1c215cbf7670bab9d8e00586"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        15,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

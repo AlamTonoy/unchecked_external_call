@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x4b6ff3067cf692997eee204962690617e92e6fef",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.19",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Auction",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2024-01-08",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.89,
+      "line_numbers": [
+        19,
+        23,
+        28
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

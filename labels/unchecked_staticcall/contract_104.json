@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x94365bedfe3a334225ce10b31c4a24acab639cb4",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.6.12",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "DAO",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2023-03-14",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.91,
+      "line_numbers": [
+        14,
+        22
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

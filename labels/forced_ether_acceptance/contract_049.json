@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x8b5958f9ab84dae1d8db600163c780b3de715821",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "DAO",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2023-03-08",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.94,
+      "line_numbers": [
+        13,
+        28
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

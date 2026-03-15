@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xb6c57ec3cb90d7b003d9118b277c4d9cb57da409",
+  "collection_source": "github_repository",
+  "compiler_version": "0.6.12",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "NFT",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-05-13",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        14,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

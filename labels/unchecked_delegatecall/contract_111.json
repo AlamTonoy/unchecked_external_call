@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x8ad8027cb7f10b19f2eae9f47135376de0c8ab55",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Options",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2022-12-21",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-03-30",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x362f19c6a6576767a1919febff10164217030fd84c43b18328410416c10d01e6"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.93,
+      "line_numbers": [
+        17,
+        27
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

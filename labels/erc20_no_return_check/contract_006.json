@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xb26d67a35fb75d5bee394f40832570126cb5c9d5",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Yield",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-11-12",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-07-16",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0x2c470f2a871048d8c4aa39673dcac938b8d83b6985178bf1f5b30cada387b519"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.76,
+      "line_numbers": [
+        15,
+        20,
+        21,
+        35
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

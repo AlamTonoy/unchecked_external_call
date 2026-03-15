@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xb975751d1918ec352ac51581cb34133a0aa21f3d",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "NFT",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2020-10-24",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.91,
+      "line_numbers": [
+        18,
+        21,
+        22
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

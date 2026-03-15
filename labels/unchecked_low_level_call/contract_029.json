@@ -1,0 +1,40 @@
+{
+  "contract_id": "0x499da86bcb1b5131999f5ac7386296c43146c265",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.16",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Lending",
+  "protocol_name": "UniswapV2Fork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2021-02-28",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        12,
+        22,
+        36,
+        39
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

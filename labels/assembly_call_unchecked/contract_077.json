@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xa575a962cbb98c47a8ae030f760dd53d47c06aff",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.16",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "DAO",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2022-05-14",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-07-23",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x0ab9ed95102d3d134105272deac7c6d5bce127e8ca44d2e0c56ea329613bc28a"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.99,
+      "line_numbers": [
+        14,
+        18,
+        25,
+        29
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

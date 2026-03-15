@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x2129b7a457dba13e1f196ecde2c2772c7fca35db",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.17",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "DAO",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-07-13",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-22",
+    "exploit_value_usd": 1200000,
+    "exploit_tx": "0x86743f51eef59f87fa01be17769fd42f36f27e49a55fbf7107f1886843a77bf3"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.99,
+      "line_numbers": [
+        12,
+        23,
+        25
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

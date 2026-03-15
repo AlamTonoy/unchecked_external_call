@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x9b4d67e7b55c7b5b860c7be0b1f3c89a71ee3217",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Yield",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2024-04-21",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-09-30",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0xf7da382983352abdaa0b5021bbdb661eece43adb09d67d832203d5979d5529c6"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        12,
+        18
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

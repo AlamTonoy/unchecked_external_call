@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xdc0dc6ecba17880c4f73f8bd269cee39e8f60bb0",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2020-09-13",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-04-10",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x1ec9f219d2116098dbc20168ef73251964e3d4f3625e9a3bbd35c18b24461d0f"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.98,
+      "line_numbers": [
+        10,
+        21,
+        22
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

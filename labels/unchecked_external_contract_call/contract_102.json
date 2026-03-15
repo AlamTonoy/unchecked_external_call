@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x5bd72d58ba8545d3cefcfe82c68e8769a2304345",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "SpookySwapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2023-01-14",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        17,
+        18,
+        19,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x43de43d2655690445a053a08a2c2139f73d4e8a5",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.16",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-06-17",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.93,
+      "line_numbers": [
+        15,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

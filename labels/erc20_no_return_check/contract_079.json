@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x47533361992b38ebfabec42ff363b03116887fcb",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "AMM",
+  "protocol_name": "SynthetixFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2024-04-07",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-11-22",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x36c6f8c39cce304c139f9de489b3be1357bcbbab5022d99e1304eebae0b74ae1"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        19,
+        22,
+        25,
+        34
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

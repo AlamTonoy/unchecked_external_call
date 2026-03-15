@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xd33eeaec60ddf76dbeddb859db700aac26a5128f",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Options",
+  "protocol_name": "MeshSwap",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-03-06",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-06-12",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x4adc362efe3feaaef3b266415f1b6e7a1b3dc472d9f4a662449e5a7025babbb4"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.77,
+      "line_numbers": [
+        12,
+        19,
+        39
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

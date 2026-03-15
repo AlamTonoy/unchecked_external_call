@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x3cd6c0928aab82b713ac09db5d69aaf8fb894149",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.7.6",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "DAO",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2020-11-21",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.99,
+      "line_numbers": [
+        18,
+        20,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

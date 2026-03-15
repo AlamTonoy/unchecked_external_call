@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xb92a1e5525abba3286a8efa6e885b15da1689403",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2020-08-04",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.83,
+      "line_numbers": [
+        10,
+        19
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

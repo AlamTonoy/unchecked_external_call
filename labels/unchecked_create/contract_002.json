@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x29a37d7e0c6d51ad6ccbad60447fef457df0ffbb",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.7",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "QuickSwapClone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-09-03",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.95,
+      "line_numbers": [
+        17,
+        20,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x01ac2abfd1b06b0f6ab62642003c109439bf0568",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Vault",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-04-14",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-10-02",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0xcce2738876042344519aa3bd121478136642973cd47d3440a4a2d57d1b4c48f9"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        23,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

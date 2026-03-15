@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x50e49f095c6f1e3068cafb36fe9a1e8a5b83a6b2",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2021-12-20",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.95,
+      "line_numbers": [
+        27,
+        31,
+        36
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

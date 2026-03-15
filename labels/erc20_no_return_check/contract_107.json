@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x6b272b1c618032cf943198d415dfab820d192872",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Lottery",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2022-09-10",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-02-05",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x8a8090fdb94beb97c23f9f38df3d7a4a5bc54234058855189a11087835dcd94d"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.92,
+      "line_numbers": [
+        17,
+        27,
+        30,
+        35
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

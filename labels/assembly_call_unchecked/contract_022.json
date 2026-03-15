@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x73e2061a93852bccfc0d3a53daa938fa404f6f81",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Staking",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2024-06-30",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2025-01-05",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x75cd02c5868933c776c58e4948db7297892fb100d464891768f5b2e21420f1b0"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        21,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

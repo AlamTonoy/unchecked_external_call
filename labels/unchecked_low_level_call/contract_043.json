@@ -1,0 +1,40 @@
+{
+  "contract_id": "0xa0b66872ba4aa492d1b11133483b4073e50aeda2",
+  "collection_source": "github_repository",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Lending",
+  "protocol_name": "RaribleFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2021-06-07",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        11,
+        13,
+        29,
+        31
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

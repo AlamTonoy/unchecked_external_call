@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x21c68606536bda1d47c6d71dda33b2f762d365e2",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Staking",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-01-31",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        12,
+        13,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

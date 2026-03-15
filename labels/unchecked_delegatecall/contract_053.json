@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x63a5a4fe0166449d8ecb5882f5f7d0b0a0d3e3c5",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Options",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2023-07-17",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-10-27",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0xc1b77e10f31a72af06011cc7ff1fdcb80e30c9568d80b5a7bd9feeea695e19cd"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.91,
+      "line_numbers": [
+        13,
+        17,
+        21
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

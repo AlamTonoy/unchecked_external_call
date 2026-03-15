@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x1ceb9135e25c84af0c6721a1bce44a852461a1d1",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.8.4",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2023-03-01",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-07",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0xfa514f67d2432a44e118fffe3a46450203e86d67669c8a63f04b6d3eea08fd14"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.78,
+      "line_numbers": [
+        22,
+        24,
+        32
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "contract_id": "0xa4d0a4c667f52b5c4166f241547b277be96ac0a6",
+  "collection_source": "ai_generated",
+  "compiler_version": "0.6.12",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-09-27",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.78,
+      "line_numbers": [
+        11,
+        18,
+        25,
+        34
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

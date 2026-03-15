@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x965341e131fe416f55c233f51ccb1a60338b850e",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Bridge",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2020-02-15",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-10-13",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x567ca9daa7ad31c2f4e49a55004fb180ef994b5c3e1099d6fe4cf47091ca5e16"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.8,
+      "line_numbers": [
+        18,
+        32
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

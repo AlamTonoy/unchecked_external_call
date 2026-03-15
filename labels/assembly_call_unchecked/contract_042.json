@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xb088abb08b6f2ef631f781c3a57c45e096756c80",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "VVSFinance",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2021-01-10",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-08-30",
+    "exploit_value_usd": 20000000,
+    "exploit_tx": "0x306f2a9962e3f1c597fe3880ebae753ccdb5e139dccbc94a58e2121f108db850"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.85,
+      "line_numbers": [
+        10,
+        13,
+        20,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

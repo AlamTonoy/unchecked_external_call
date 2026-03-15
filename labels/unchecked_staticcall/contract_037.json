@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x69a226581c24f38c50f461e434dde1cebe7f7e8e",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Vault",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2020-03-29",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.91,
+      "line_numbers": [
+        13,
+        15,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x29996cc4bf686f16314dcff853e4caaaaa8836c4",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-09-14",
+  "audit_status": "Halborn_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-09-14",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x2e6af6a929f9bf539715bea8dd25d2ee54e3739fcf8195e27f00adfd164b1ca8"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.76,
+      "line_numbers": [
+        12,
+        26,
+        33
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

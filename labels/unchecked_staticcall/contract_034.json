@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xa9e44285a31d9464e4beb5781731b4ba2b822ae2",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "YearnVault",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-04-30",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.85,
+      "line_numbers": [
+        13,
+        19
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

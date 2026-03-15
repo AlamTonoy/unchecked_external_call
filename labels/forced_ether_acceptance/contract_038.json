@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x07c2a9f41bd7886cbbe0dfc474757726e95744fb",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Lending",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2021-01-28",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-12-29",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x2e0125c5db09e893fb7fa03d49d82de6260b99380ac9f5cf519960e6c2fe1a0f"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "line_numbers": [
+        23,
+        29
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x4423940ed2bc7351eac64d743fe1a0554f65d5fe",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Insurance",
+  "protocol_name": "SolarbeamFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-02-10",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        17,
+        20,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

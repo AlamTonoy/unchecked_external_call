@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x17bcba8cd351bc6c8f5773d8bd0b3abfaf4ce26b",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "AMM",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2022-03-08",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_external_contract_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        17,
+        25,
+        26,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x6eb060182b0b14470389c337bd65a24b1e1ed168",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "NFT",
+  "protocol_name": "X2Y2Clone",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-08-15",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-06-15",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0x3fa9c86b6e956a4093159951f3bddfc990a85d84a0cc37e1f465aaa26df87df0"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.77,
+      "line_numbers": [
+        10,
+        22
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

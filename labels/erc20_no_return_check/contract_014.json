@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xb19018302a6b2f237d9543e609433d2ca590ccdf",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": true,
+  "optimization_runs": 1000,
+  "protocol_type": "Escrow",
+  "protocol_name": "TrisolarisClone",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2020-01-07",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-08-01",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0xc946adb9977eb1a3e611913540acbee2068aa283d9989e4e825a472475518c8e"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.92,
+      "line_numbers": [
+        15,
+        23,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

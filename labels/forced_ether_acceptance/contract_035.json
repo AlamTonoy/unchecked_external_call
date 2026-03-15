@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xf7cdbf5ea9bb7d18ce818c8e2974879756d21fd4",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lottery",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2024-05-06",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.88,
+      "line_numbers": [
+        12,
+        16,
+        18,
+        24
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

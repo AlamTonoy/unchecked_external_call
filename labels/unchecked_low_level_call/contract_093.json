@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xca2530a3bdcabe6400cce5316f53a3ecd2261583",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "DAO",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2022-12-30",
+  "audit_status": "OpenZeppelin_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        12,
+        31
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

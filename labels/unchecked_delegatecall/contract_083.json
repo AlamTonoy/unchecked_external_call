@@ -1,0 +1,37 @@
+{
+  "contract_id": "0xb81c4dbd1629c3178585dde7ce6be186544c4a76",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.19",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "DAO",
+  "protocol_name": "KlaySwap",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2022-02-13",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.75,
+      "line_numbers": [
+        17,
+        30
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

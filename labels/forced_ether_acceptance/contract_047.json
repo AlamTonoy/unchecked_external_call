@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x5f1cedcdf6a725be5431af2d6fcf4a44285f5918",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Lottery",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-11-11",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-10-03",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x03b16820f3b6e301fc98724e6fc3d7a611b8643eec1fc527b646d6d544ad9a37"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.9,
+      "line_numbers": [
+        13,
+        23,
+        25
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

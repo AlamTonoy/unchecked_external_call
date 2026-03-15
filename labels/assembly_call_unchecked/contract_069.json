@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x30cea091454239811570f2442e6b57f221132e9b",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.7",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Staking",
+  "protocol_name": "LooksRareFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2023-07-05",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-02-12",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xba8618366d6900a087a6e7e32234f304122c5b3f419161b182ecaf6232682137"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.87,
+      "line_numbers": [
+        10,
+        14,
+        19,
+        23
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

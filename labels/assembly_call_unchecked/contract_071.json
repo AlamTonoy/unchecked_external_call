@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x0e80360ed44cc245bd878905c92658dcef72769a",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Escrow",
+  "protocol_name": "OrcaFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2023-02-20",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        16,
+        19,
+        26,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

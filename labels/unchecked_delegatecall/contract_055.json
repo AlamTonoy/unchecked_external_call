@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xe4856f3510849f3232cd42f68f6bf761cf07b4fb",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Payment",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2023-05-23",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.96,
+      "line_numbers": [
+        14,
+        26,
+        33,
+        35
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x82d81922cd678c99622d1fbe98d802889596724e",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.20",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "dYdXClone",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2023-04-22",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.79,
+      "line_numbers": [
+        10,
+        18,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x946cae87d42a887c9fe7a4931e19167837ac83b5",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Insurance",
+  "protocol_name": "SudoswapFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2021-10-17",
+  "audit_status": "Consensys_Diligence_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-10-09",
+    "exploit_value_usd": 25000,
+    "exploit_tx": "0x49634907410812f5cd68289c38889e247fc7969143d9cb5c9dfdb13be5f04815"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.96,
+      "line_numbers": [
+        18,
+        24
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

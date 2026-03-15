@@ -1,0 +1,35 @@
+{
+  "contract_id": "0x753a2c9c7366878612e0aed2b442c66fa5056a2c",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.19",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Bridge",
+  "protocol_name": "HermesProtocol",
+  "total_value_locked_usd": 10000,
+  "deployment_date": "2023-12-15",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-12-09",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xb8b8470a697179291d3f53439298a30bef8b05490345c6bd1dbbccf4ecfa4df9"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.97,
+      "line_numbers": [
+        21,
+        28
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

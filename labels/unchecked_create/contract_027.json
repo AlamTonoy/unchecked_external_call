@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x58371525ab23b135bce5687e50bd558f48947a26",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.6.0 <0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Staking",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 1000000,
+  "deployment_date": "2024-07-08",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.76,
+      "line_numbers": [
+        18,
+        27
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

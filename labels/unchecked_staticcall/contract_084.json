@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x5fce3b0c3e3856771cd4bd440b4c503d1b4c7f79",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "Payment",
+  "protocol_name": "SeaportFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-04-08",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-08-21",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xb497d9e5ca9bc6d54b5e78fabf710b39b5b06c7836c14300e5f0431ad72c0127"
+  },
+  "vulnerability_labels": {
+    "unchecked_staticcall": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 1.0,
+      "line_numbers": [
+        13,
+        21,
+        24
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

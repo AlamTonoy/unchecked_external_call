@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x9fbae63724acf252f784779cd39875ba99d39185",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2022-07-22",
+  "audit_status": "SlowMist_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-05-17",
+    "exploit_value_usd": 5000,
+    "exploit_tx": "0x2cb06e1992e7cdff553f1a9c1aad561dbd6a2ccc28499edace001258adc390ee"
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.96,
+      "line_numbers": [
+        12,
+        26,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x0aa7e52e7028d3e8822a97d2cae1d7f92b8a4b99",
+  "collection_source": "github_repository",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Escrow",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2020-09-03",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.92,
+      "line_numbers": [
+        19,
+        28
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

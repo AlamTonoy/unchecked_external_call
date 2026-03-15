@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xbdd7b7acf82e0a301009282ce3fd885e18d6401c",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.0",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Vault",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2023-02-14",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.88,
+      "line_numbers": [
+        13,
+        15,
+        21,
+        25
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

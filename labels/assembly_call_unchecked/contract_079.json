@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x5c92c5552107d50d92ea4692b4345952385e502a",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.0",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": true,
+  "optimization_runs": 0,
+  "protocol_type": "AMM",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2023-09-16",
+  "audit_status": "Unaudited",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-04-26",
+    "exploit_value_usd": 3600000,
+    "exploit_tx": "0x18e500294dc1edbc0c3bc3639889687f48daefc2e103ea6e60c6e4b4ca694ab0"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.86,
+      "line_numbers": [
+        15,
+        17,
+        21
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

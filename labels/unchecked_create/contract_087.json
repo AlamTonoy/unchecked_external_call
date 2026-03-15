@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xeb3a18c857d135ad5a9a07c0eada5f0071e17f91",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "NFT",
+  "protocol_name": "ZipSwap",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2022-06-16",
+  "audit_status": "Hacken_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.84,
+      "line_numbers": [
+        16,
+        21,
+        23,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

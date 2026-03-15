@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xd2a63d7b1d25b7031d157a53249255948e7715a9",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.20",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Staking",
+  "protocol_name": "BlurFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2023-07-11",
+  "audit_status": "Trail_of_Bits_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_create": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        18,
+        22,
+        23,
+        30
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xdd94f716a30f26fb8712fdde57fd12c5283e30a7",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.7",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Yield",
+  "protocol_name": "AaveClone",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-08-12",
+  "audit_status": "Code4rena_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.97,
+      "line_numbers": [
+        19,
+        26
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

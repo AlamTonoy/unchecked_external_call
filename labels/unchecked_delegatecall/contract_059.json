@@ -1,0 +1,39 @@
+{
+  "contract_id": "0x4cf1af78629e8b2d597bc8a0aac5beadc6b570a2",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "SolarbeamFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2022-03-10",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-07-11",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xe6935d4aa28946dd3fee521a585f7e52969d38c53f8865f746d59cc44049eed1"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.96,
+      "line_numbers": [
+        12,
+        17,
+        26,
+        31
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

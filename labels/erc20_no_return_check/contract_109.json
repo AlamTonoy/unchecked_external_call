@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x1acfd4f2dde136ea4feb0855a8243aebfef131b6",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "Escrow",
+  "protocol_name": "QuickSwapClone",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2020-02-21",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-01-06",
+    "exploit_value_usd": 8000000,
+    "exploit_tx": "0x356783ec7cc4efd8847169545bcd24df7e6bbe4689b23863df01a82a9bbe0056"
+  },
+  "vulnerability_labels": {
+    "erc20_no_return_check": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.91,
+      "line_numbers": [
+        15,
+        34
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

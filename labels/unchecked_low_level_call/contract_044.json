@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x5a61de02a5ef4b55167db76e22bfd1e7979c9deb",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.16",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 200,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "CurveFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2020-04-12",
+  "audit_status": "PeckShield_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-09-22",
+    "exploit_value_usd": 100000,
+    "exploit_tx": "0xa0d8bb3fd8b96b7aa2de90e8772c554886d179175fb0608dcfae8a75ddd5c9b5"
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.86,
+      "line_numbers": [
+        19,
+        37
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

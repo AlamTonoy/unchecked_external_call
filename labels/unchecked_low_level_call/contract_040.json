@@ -1,0 +1,39 @@
+{
+  "contract_id": "0xdaf34bc5b917e67850c1b6c892e300053576ea37",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.19",
+  "solidity_version": "0.8.20",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "Lottery",
+  "protocol_name": "BalancerFork",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2024-08-01",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.82,
+      "line_numbers": [
+        18,
+        25,
+        36
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

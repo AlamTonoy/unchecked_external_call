@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x198486fcda0698e78355b66f64b9b3a12ec230b0",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.17",
+  "solidity_version": ">=0.8.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 0,
+  "protocol_type": "NFT",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2022-06-10",
+  "audit_status": "Immunefi_2024",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-03-28",
+    "exploit_value_usd": 60000000,
+    "exploit_tx": "0xe9dd1d7d69f4b12b180e60b200eb836d0a52383be826c2cc0786dced28ee8eae"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.8,
+      "line_numbers": [
+        12,
+        21,
+        24
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

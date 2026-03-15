@@ -1,0 +1,38 @@
+{
+  "contract_id": "0x7ea78d6ebc5693818c4fa1f6c5fc388025779859",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.21",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 500,
+  "protocol_type": "NFT",
+  "protocol_name": "TraderJoeFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-03-16",
+  "audit_status": "Sherlock_2024",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_low_level_call": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.87,
+      "line_numbers": [
+        11,
+        19
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-703",
+        "CWE-754"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

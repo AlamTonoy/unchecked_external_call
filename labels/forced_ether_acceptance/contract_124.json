@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x79e722ac194655da37ff1317f7158f73a7154819",
+  "collection_source": "dune_analytics",
+  "compiler_version": "0.8.23",
+  "solidity_version": "0.8.19",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "PancakeSwapFork",
+  "total_value_locked_usd": 100000,
+  "deployment_date": "2022-11-04",
+  "audit_status": "CertiK_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.91,
+      "line_numbers": [
+        15,
+        25,
+        26
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "contract_id": "0xc1b738870a33ac8dcb84c8f6d0ddf22e4a4c2d16",
+  "collection_source": "github_repository",
+  "compiler_version": "0.8.13",
+  "solidity_version": "^0.6.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "HoneySwap",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2022-03-29",
+  "audit_status": "Spearbit_2023",
+  "exploit_history": {
+    "exploited": false,
+    "exploit_date": null,
+    "exploit_value_usd": 0,
+    "exploit_tx": null
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.78,
+      "line_numbers": [
+        14,
+        21,
+        32
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}
