@@ -1,0 +1,36 @@
+{
+  "contract_id": "0x4b35ffb698d31be044921487210e5070552464e7",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.17",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": false,
+  "optimization_runs": 200,
+  "protocol_type": "NFT",
+  "protocol_name": "OpenSeaFork",
+  "total_value_locked_usd": 100000000,
+  "deployment_date": "2021-05-20",
+  "audit_status": "PeckShield_2021",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-08-10",
+    "exploit_value_usd": 1000000,
+    "exploit_tx": "0x23bd2c2c1e88affffaa2c06fe81b144bb0f3d60e8d1988e6c9ca69d5dbd9b8ba"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.83,
+      "line_numbers": [
+        11,
+        14
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

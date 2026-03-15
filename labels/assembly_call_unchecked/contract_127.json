@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xc0480029ee4f6c3b1ec89594593b5b4418189dec",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.7.6",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "AMM",
+  "protocol_name": "SushiswapFork",
+  "total_value_locked_usd": 50000,
+  "deployment_date": "2020-02-14",
+  "audit_status": "Trail_of_Bits_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2020-04-19",
+    "exploit_value_usd": 50000,
+    "exploit_tx": "0x06c265d27e5675dbaa6d91438a14972dbd73e1be4265e5348f82af3e3b606a20"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.76,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

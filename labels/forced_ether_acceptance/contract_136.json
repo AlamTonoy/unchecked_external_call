@@ -1,0 +1,35 @@
+{
+  "contract_id": "0xd09ebaff86d511852b382a3cb08d332ecd1e8b16",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.6.12",
+  "solidity_version": ">=0.7.0 <0.9.0",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Payment",
+  "protocol_name": "GnosisSafe",
+  "total_value_locked_usd": 0,
+  "deployment_date": "2021-09-03",
+  "audit_status": "Code4rena_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-01-18",
+    "exploit_value_usd": 2000000,
+    "exploit_tx": "0x2cb837e6162695d8204e4987b1c70c0e68826ebb5cb1cfafbf249ab703a09d25"
+  },
+  "vulnerability_labels": {
+    "forced_ether_acceptance": {
+      "present": true,
+      "severity": "medium",
+      "confidence": 0.85,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252",
+        "CWE-670"
+      ],
+      "swc": []
+    }
+  }
+}

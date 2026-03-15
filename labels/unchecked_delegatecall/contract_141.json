@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x1769802c327c6241c3179394bebb01fe110e6253",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.10",
+  "solidity_version": "^0.7.0",
+  "optimization_enabled": true,
+  "optimization_runs": 10000,
+  "protocol_type": "Perpetuals",
+  "protocol_name": "dYdXFork",
+  "total_value_locked_usd": 5000000,
+  "deployment_date": "2022-08-01",
+  "audit_status": "Consensys_Diligence_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2022-12-01",
+    "exploit_value_usd": 15000000,
+    "exploit_tx": "0x8a3fa27ac353a8d5a25242e6132698d3eb08a75fb10e81487674ead671a5db05"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.9,
+      "line_numbers": [
+        14,
+        17
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}

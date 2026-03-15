@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xa4038e962bce6471a665f892d2af98d8b4357c00",
+  "collection_source": "tenderly_export",
+  "compiler_version": "0.8.13",
+  "solidity_version": "0.8.17",
+  "optimization_enabled": false,
+  "optimization_runs": 1000,
+  "protocol_type": "Bridge",
+  "protocol_name": "MultichainBridge",
+  "total_value_locked_usd": 10000000,
+  "deployment_date": "2021-01-15",
+  "audit_status": "Quantstamp_2023",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2021-04-11",
+    "exploit_value_usd": 500000,
+    "exploit_tx": "0xcb36929138ee25451f88b9d303f37e1f08ea94b2e4d612cf7bdd564188915a31"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.81,
+      "line_numbers": [
+        11,
+        14
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

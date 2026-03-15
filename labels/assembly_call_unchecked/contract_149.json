@@ -1,0 +1,36 @@
+{
+  "contract_id": "0xf12d3c95509e82ed561bbc5d0ea771a605257b07",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.4",
+  "solidity_version": "^0.8.0",
+  "optimization_enabled": true,
+  "optimization_runs": 10000,
+  "protocol_type": "Lending",
+  "protocol_name": "CompoundFork",
+  "total_value_locked_usd": 500000,
+  "deployment_date": "2024-01-22",
+  "audit_status": "Sherlock_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2024-02-28",
+    "exploit_value_usd": 300000000,
+    "exploit_tx": "0xace7756e926e6ea2ed6246dd058218ce9ba0e2cf79f8e901b00d0b640166374a"
+  },
+  "vulnerability_labels": {
+    "assembly_call_unchecked": {
+      "present": true,
+      "severity": "high",
+      "confidence": 0.98,
+      "line_numbers": [
+        13,
+        16
+      ],
+      "cwe": [
+        "CWE-252"
+      ],
+      "swc": [
+        "SWC-104"
+      ]
+    }
+  }
+}

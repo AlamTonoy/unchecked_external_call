@@ -1,0 +1,37 @@
+{
+  "contract_id": "0x7a10af778cb877d71b409d504263e507633749a4",
+  "collection_source": "etherscan_verified",
+  "compiler_version": "0.8.15",
+  "solidity_version": ">=0.7.0 <0.9.0",
+  "optimization_enabled": true,
+  "optimization_runs": 500,
+  "protocol_type": "Insurance",
+  "protocol_name": "NexusFork",
+  "total_value_locked_usd": 50000000,
+  "deployment_date": "2023-01-05",
+  "audit_status": "CertiK_2022",
+  "exploit_history": {
+    "exploited": true,
+    "exploit_date": "2023-04-26",
+    "exploit_value_usd": 30000000,
+    "exploit_tx": "0x522080d16ada125bda0110d4339f823d0f334b88645d1c1a1dc4ff63b76432b9"
+  },
+  "vulnerability_labels": {
+    "unchecked_delegatecall": {
+      "present": true,
+      "severity": "critical",
+      "confidence": 0.92,
+      "line_numbers": [
+        14,
+        17
+      ],
+      "cwe": [
+        "CWE-829",
+        "CWE-250"
+      ],
+      "swc": [
+        "SWC-112"
+      ]
+    }
+  }
+}
